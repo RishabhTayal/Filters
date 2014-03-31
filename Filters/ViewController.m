@@ -76,10 +76,16 @@
         view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         
         UIImageView* iv = [[UIImageView alloc] initWithFrame:view.frame];
+        iv.contentMode = UIViewContentModeScaleAspectFill;
+        iv.clipsToBounds = YES;
+        iv.image = _orgImage;
         [view addSubview:iv];
         
-        label = [[UILabel alloc] initWithFrame:view.frame];
+        label = [[UILabel alloc] initWithFrame:CGRectMake(0, view.frame.size.height - 40, view.frame.size.width, 40)];
 //        label.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        label.textAlignment = NSTextAlignmentCenter;
+        label.textColor = [UIColor whiteColor];
+        label.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.6];
         label.tag = 1;
         [view addSubview:label];
     }

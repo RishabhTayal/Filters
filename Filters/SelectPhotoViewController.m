@@ -41,28 +41,44 @@
 
 -(IBAction)loadPhotosClicked:(id)sender
 {
-    UIActionSheet* actionSheet = [[UIActionSheet alloc] initWithTitle:@"Import Photo" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Library", @"Camera", @"Facebook", nil];
-    [actionSheet showInView:self.view];
-}
-
-#pragma mark - UIActionSheet Delegate
-
--(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    NSLog(@"%d", buttonIndex);
-    if (buttonIndex == 0) {
-        UIImagePickerController* imagePicker = [[UIImagePickerController alloc] init];
+    //    UIActionSheet* actionSheet = [[UIActionSheet alloc] initWithTitle:@"Import Photo" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Library", @"Camera", @"Facebook", nil];
+    //    [actionSheet showInView:self.view];
+    
+    UIButton* button = (UIButton*)sender;
+    
+    UIImagePickerController* imagePicker = [[UIImagePickerController alloc] init];
+    imagePicker.delegate = self;
+    if (button.tag == 1) {
         [imagePicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
-        imagePicker.delegate = self;
         [self presentViewController:imagePicker animated:YES completion:nil];
     }
-    if (buttonIndex == 1) {
-        UIImagePickerController* imagePicker = [[UIImagePickerController alloc] init];
+    if (button.tag == 2) {
         [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
-        imagePicker.delegate = self;
         [self presentViewController:imagePicker animated:YES completion:nil];
+    }
+    if (button.tag == 3) {
+        
     }
 }
+
+//#pragma mark - UIActionSheet Delegate
+//
+//-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+//{
+//    NSLog(@"%d", buttonIndex);
+//    if (buttonIndex == 0) {
+//        UIImagePickerController* imagePicker = [[UIImagePickerController alloc] init];
+//        [imagePicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+//        imagePicker.delegate = self;
+//        [self presentViewController:imagePicker animated:YES completion:nil];
+//    }
+//    if (buttonIndex == 1) {
+//        UIImagePickerController* imagePicker = [[UIImagePickerController alloc] init];
+//        [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
+//        imagePicker.delegate = self;
+//        [self presentViewController:imagePicker animated:YES completion:nil];
+//    }
+//}
 
 #pragma mark - UIImagePickerController Delegate
 
