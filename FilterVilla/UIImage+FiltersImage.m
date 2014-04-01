@@ -16,6 +16,7 @@
     int kMaxResolutionHeight = 640;
     
     if (!CGSizeEqualToSize(size, CGSizeZero)) {
+        //Multiply by 2 for retina display
         kMaxResolutionWidth = size.width * 2;
         kMaxResolutionHeight = size.height * 2;
     }
