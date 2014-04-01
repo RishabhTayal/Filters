@@ -10,23 +10,22 @@
 		06A932AB18E9EE390043CA56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AA18E9EE390043CA56 /* Foundation.framework */; };
 		06A932AD18E9EE390043CA56 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AC18E9EE390043CA56 /* CoreGraphics.framework */; };
 		06A932AF18E9EE390043CA56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AE18E9EE390043CA56 /* UIKit.framework */; };
-		06A932B518E9EE390043CA56 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06A932B318E9EE390043CA56 /* InfoPlist.strings */; };
-		06A932B718E9EE390043CA56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A932B618E9EE390043CA56 /* main.m */; };
-		06A932BB18E9EE390043CA56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A932BA18E9EE390043CA56 /* AppDelegate.m */; };
-		06A932BE18E9EE390043CA56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A932BC18E9EE390043CA56 /* Main.storyboard */; };
-		06A932C118E9EE390043CA56 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A932C018E9EE390043CA56 /* ViewController.m */; };
-		06A932C318E9EE390043CA56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06A932C218E9EE390043CA56 /* Images.xcassets */; };
 		06A932CA18E9EE390043CA56 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932C918E9EE390043CA56 /* XCTest.framework */; };
 		06A932CB18E9EE390043CA56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AA18E9EE390043CA56 /* Foundation.framework */; };
 		06A932CC18E9EE390043CA56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AE18E9EE390043CA56 /* UIKit.framework */; };
 		06A932D418E9EE390043CA56 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06A932D218E9EE390043CA56 /* InfoPlist.strings */; };
 		06A932D618E9EE390043CA56 /* FiltersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A932D518E9EE390043CA56 /* FiltersTests.m */; };
-		06A932E118E9F45B0043CA56 /* FilterClassToName.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A932E018E9F45B0043CA56 /* FilterClassToName.m */; };
-		06A932E518E9F4D90043CA56 /* SwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A932E418E9F4D90043CA56 /* SwipeView.m */; };
-		06A9330D18EA19600043CA56 /* SelectPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9330C18EA19600043CA56 /* SelectPhotoViewController.m */; };
-		06A9330F18EB15F10043CA56 /* border@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A9330E18EB15F10043CA56 /* border@2x.png */; };
-		06A9331118EB161D0043CA56 /* border.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A9331018EB161D0043CA56 /* border.png */; };
-		06A9331418EB1D450043CA56 /* UIImage+FiltersImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9331318EB1D450043CA56 /* UIImage+FiltersImage.m */; };
+		06A9332D18EB21E40043CA56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9331718EB21E40043CA56 /* AppDelegate.m */; };
+		06A9332F18EB21E40043CA56 /* border.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A9331A18EB21E40043CA56 /* border.png */; };
+		06A9333018EB21E40043CA56 /* border@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A9331B18EB21E40043CA56 /* border@2x.png */; };
+		06A9333118EB21E40043CA56 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06A9331C18EB21E40043CA56 /* InfoPlist.strings */; };
+		06A9333218EB21E40043CA56 /* FilterClassToName.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9331F18EB21E40043CA56 /* FilterClassToName.m */; };
+		06A9333418EB21E40043CA56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06A9332218EB21E40043CA56 /* Images.xcassets */; };
+		06A9333518EB21E40043CA56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9332318EB21E40043CA56 /* main.m */; };
+		06A9333618EB21E40043CA56 /* SelectPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9332518EB21E40043CA56 /* SelectPhotoViewController.m */; };
+		06A9333718EB21E40043CA56 /* SwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9332818EB21E40043CA56 /* SwipeView.m */; };
+		06A9333818EB21E40043CA56 /* UIImage+FiltersImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9332A18EB21E40043CA56 /* UIImage+FiltersImage.m */; };
+		06A9333918EB21E40043CA56 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9332C18EB21E40043CA56 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,35 +39,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06A932A718E9EE390043CA56 /* Filters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Filters.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06A932A718E9EE390043CA56 /* FilterVilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilterVilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A932AA18E9EE390043CA56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		06A932AC18E9EE390043CA56 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		06A932AE18E9EE390043CA56 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		06A932B218E9EE390043CA56 /* Filters-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Filters-Info.plist"; sourceTree = "<group>"; };
-		06A932B418E9EE390043CA56 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		06A932B618E9EE390043CA56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		06A932B818E9EE390043CA56 /* Filters-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Filters-Prefix.pch"; sourceTree = "<group>"; };
-		06A932B918E9EE390043CA56 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		06A932BA18E9EE390043CA56 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		06A932BD18E9EE390043CA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		06A932BF18E9EE390043CA56 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		06A932C018E9EE390043CA56 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		06A932C218E9EE390043CA56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		06A932C818E9EE390043CA56 /* FiltersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiltersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06A932C818E9EE390043CA56 /* FilterVillaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilterVillaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A932C918E9EE390043CA56 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		06A932D118E9EE390043CA56 /* FiltersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FiltersTests-Info.plist"; sourceTree = "<group>"; };
+		06A932D118E9EE390043CA56 /* FilterVillaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FilterVillaTests-Info.plist"; sourceTree = "<group>"; };
 		06A932D318E9EE390043CA56 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		06A932D518E9EE390043CA56 /* FiltersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiltersTests.m; sourceTree = "<group>"; };
-		06A932DF18E9F45B0043CA56 /* FilterClassToName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterClassToName.h; sourceTree = "<group>"; };
-		06A932E018E9F45B0043CA56 /* FilterClassToName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterClassToName.m; sourceTree = "<group>"; };
-		06A932E318E9F4D90043CA56 /* SwipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeView.h; sourceTree = "<group>"; };
-		06A932E418E9F4D90043CA56 /* SwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeView.m; sourceTree = "<group>"; };
-		06A9330B18EA19600043CA56 /* SelectPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoViewController.h; sourceTree = "<group>"; };
-		06A9330C18EA19600043CA56 /* SelectPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotoViewController.m; sourceTree = "<group>"; };
-		06A9330E18EB15F10043CA56 /* border@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "border@2x.png"; sourceTree = "<group>"; };
-		06A9331018EB161D0043CA56 /* border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = border.png; sourceTree = "<group>"; };
-		06A9331218EB1D450043CA56 /* UIImage+FiltersImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FiltersImage.h"; sourceTree = "<group>"; };
-		06A9331318EB1D450043CA56 /* UIImage+FiltersImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FiltersImage.m"; sourceTree = "<group>"; };
+		06A9331618EB21E40043CA56 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		06A9331718EB21E40043CA56 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		06A9331918EB21E40043CA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		06A9331A18EB21E40043CA56 /* border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = border.png; sourceTree = "<group>"; };
+		06A9331B18EB21E40043CA56 /* border@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "border@2x.png"; sourceTree = "<group>"; };
+		06A9331D18EB21E40043CA56 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		06A9331E18EB21E40043CA56 /* FilterClassToName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterClassToName.h; sourceTree = "<group>"; };
+		06A9331F18EB21E40043CA56 /* FilterClassToName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterClassToName.m; sourceTree = "<group>"; };
+		06A9332018EB21E40043CA56 /* FilterVilla-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FilterVilla-Info.plist"; sourceTree = "<group>"; };
+		06A9332118EB21E40043CA56 /* FilterVilla-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FilterVilla-Prefix.pch"; sourceTree = "<group>"; };
+		06A9332218EB21E40043CA56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		06A9332318EB21E40043CA56 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		06A9332418EB21E40043CA56 /* SelectPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoViewController.h; sourceTree = "<group>"; };
+		06A9332518EB21E40043CA56 /* SelectPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotoViewController.m; sourceTree = "<group>"; };
+		06A9332718EB21E40043CA56 /* SwipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeView.h; sourceTree = "<group>"; };
+		06A9332818EB21E40043CA56 /* SwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeView.m; sourceTree = "<group>"; };
+		06A9332918EB21E40043CA56 /* UIImage+FiltersImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FiltersImage.h"; sourceTree = "<group>"; };
+		06A9332A18EB21E40043CA56 /* UIImage+FiltersImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FiltersImage.m"; sourceTree = "<group>"; };
+		06A9332B18EB21E40043CA56 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		06A9332C18EB21E40043CA56 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +97,7 @@
 		06A9329E18E9EE390043CA56 = {
 			isa = PBXGroup;
 			children = (
-				06A932B018E9EE390043CA56 /* Filters */,
+				06A9331518EB21E40043CA56 /* FilterVilla */,
 				06A932CF18E9EE390043CA56 /* FiltersTests */,
 				06A932A918E9EE390043CA56 /* Frameworks */,
 				06A932A818E9EE390043CA56 /* Products */,
@@ -108,8 +107,8 @@
 		06A932A818E9EE390043CA56 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				06A932A718E9EE390043CA56 /* Filters.app */,
-				06A932C818E9EE390043CA56 /* FiltersTests.xctest */,
+				06A932A718E9EE390043CA56 /* FilterVilla.app */,
+				06A932C818E9EE390043CA56 /* FilterVillaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,40 +124,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		06A932B018E9EE390043CA56 /* Filters */ = {
-			isa = PBXGroup;
-			children = (
-				06A932E218E9F4D90043CA56 /* SwipeView */,
-				06A932B918E9EE390043CA56 /* AppDelegate.h */,
-				06A932BA18E9EE390043CA56 /* AppDelegate.m */,
-				06A932BC18E9EE390043CA56 /* Main.storyboard */,
-				06A9330B18EA19600043CA56 /* SelectPhotoViewController.h */,
-				06A9330C18EA19600043CA56 /* SelectPhotoViewController.m */,
-				06A932BF18E9EE390043CA56 /* ViewController.h */,
-				06A932C018E9EE390043CA56 /* ViewController.m */,
-				06A932DF18E9F45B0043CA56 /* FilterClassToName.h */,
-				06A932E018E9F45B0043CA56 /* FilterClassToName.m */,
-				06A9331218EB1D450043CA56 /* UIImage+FiltersImage.h */,
-				06A9331318EB1D450043CA56 /* UIImage+FiltersImage.m */,
-				06A932C218E9EE390043CA56 /* Images.xcassets */,
-				06A932B118E9EE390043CA56 /* Supporting Files */,
-			);
-			path = Filters;
-			sourceTree = "<group>";
-		};
-		06A932B118E9EE390043CA56 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				06A9331018EB161D0043CA56 /* border.png */,
-				06A9330E18EB15F10043CA56 /* border@2x.png */,
-				06A932B218E9EE390043CA56 /* Filters-Info.plist */,
-				06A932B318E9EE390043CA56 /* InfoPlist.strings */,
-				06A932B618E9EE390043CA56 /* main.m */,
-				06A932B818E9EE390043CA56 /* Filters-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		06A932CF18E9EE390043CA56 /* FiltersTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,27 +136,61 @@
 		06A932D018E9EE390043CA56 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				06A932D118E9EE390043CA56 /* FiltersTests-Info.plist */,
+				06A932D118E9EE390043CA56 /* FilterVillaTests-Info.plist */,
 				06A932D218E9EE390043CA56 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		06A932E218E9F4D90043CA56 /* SwipeView */ = {
+		06A9331518EB21E40043CA56 /* FilterVilla */ = {
 			isa = PBXGroup;
 			children = (
-				06A932E318E9F4D90043CA56 /* SwipeView.h */,
-				06A932E418E9F4D90043CA56 /* SwipeView.m */,
+				06A9332618EB21E40043CA56 /* SwipeView */,
+				06A9331618EB21E40043CA56 /* AppDelegate.h */,
+				06A9331718EB21E40043CA56 /* AppDelegate.m */,
+				06A9331818EB21E40043CA56 /* Main.storyboard */,
+				06A9331E18EB21E40043CA56 /* FilterClassToName.h */,
+				06A9331F18EB21E40043CA56 /* FilterClassToName.m */,
+				06A9332418EB21E40043CA56 /* SelectPhotoViewController.h */,
+				06A9332518EB21E40043CA56 /* SelectPhotoViewController.m */,
+				06A9332918EB21E40043CA56 /* UIImage+FiltersImage.h */,
+				06A9332A18EB21E40043CA56 /* UIImage+FiltersImage.m */,
+				06A9332B18EB21E40043CA56 /* ViewController.h */,
+				06A9332C18EB21E40043CA56 /* ViewController.m */,
+				06A9332218EB21E40043CA56 /* Images.xcassets */,
+				06A9333A18EB23380043CA56 /* Supporting Files */,
+			);
+			path = FilterVilla;
+			sourceTree = "<group>";
+		};
+		06A9332618EB21E40043CA56 /* SwipeView */ = {
+			isa = PBXGroup;
+			children = (
+				06A9332718EB21E40043CA56 /* SwipeView.h */,
+				06A9332818EB21E40043CA56 /* SwipeView.m */,
 			);
 			path = SwipeView;
+			sourceTree = "<group>";
+		};
+		06A9333A18EB23380043CA56 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06A9332118EB21E40043CA56 /* FilterVilla-Prefix.pch */,
+				06A9332018EB21E40043CA56 /* FilterVilla-Info.plist */,
+				06A9332318EB21E40043CA56 /* main.m */,
+				06A9331C18EB21E40043CA56 /* InfoPlist.strings */,
+				06A9331B18EB21E40043CA56 /* border@2x.png */,
+				06A9331A18EB21E40043CA56 /* border.png */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		06A932A618E9EE390043CA56 /* Filters */ = {
+		06A932A618E9EE390043CA56 /* FilterVilla */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 06A932D918E9EE390043CA56 /* Build configuration list for PBXNativeTarget "Filters" */;
+			buildConfigurationList = 06A932D918E9EE390043CA56 /* Build configuration list for PBXNativeTarget "FilterVilla" */;
 			buildPhases = (
 				06A932A318E9EE390043CA56 /* Sources */,
 				06A932A418E9EE390043CA56 /* Frameworks */,
@@ -201,14 +200,14 @@
 			);
 			dependencies = (
 			);
-			name = Filters;
+			name = FilterVilla;
 			productName = Filters;
-			productReference = 06A932A718E9EE390043CA56 /* Filters.app */;
+			productReference = 06A932A718E9EE390043CA56 /* FilterVilla.app */;
 			productType = "com.apple.product-type.application";
 		};
-		06A932C718E9EE390043CA56 /* FiltersTests */ = {
+		06A932C718E9EE390043CA56 /* FilterVillaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 06A932DC18E9EE390043CA56 /* Build configuration list for PBXNativeTarget "FiltersTests" */;
+			buildConfigurationList = 06A932DC18E9EE390043CA56 /* Build configuration list for PBXNativeTarget "FilterVillaTests" */;
 			buildPhases = (
 				06A932C418E9EE390043CA56 /* Sources */,
 				06A932C518E9EE390043CA56 /* Frameworks */,
@@ -219,9 +218,9 @@
 			dependencies = (
 				06A932CE18E9EE390043CA56 /* PBXTargetDependency */,
 			);
-			name = FiltersTests;
+			name = FilterVillaTests;
 			productName = FiltersTests;
-			productReference = 06A932C818E9EE390043CA56 /* FiltersTests.xctest */;
+			productReference = 06A932C818E9EE390043CA56 /* FilterVillaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -238,7 +237,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 06A932A218E9EE390043CA56 /* Build configuration list for PBXProject "Filters" */;
+			buildConfigurationList = 06A932A218E9EE390043CA56 /* Build configuration list for PBXProject "FilterVilla" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -251,8 +250,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				06A932A618E9EE390043CA56 /* Filters */,
-				06A932C718E9EE390043CA56 /* FiltersTests */,
+				06A932A618E9EE390043CA56 /* FilterVilla */,
+				06A932C718E9EE390043CA56 /* FilterVillaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -262,11 +261,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06A9330F18EB15F10043CA56 /* border@2x.png in Resources */,
-				06A932C318E9EE390043CA56 /* Images.xcassets in Resources */,
-				06A932B518E9EE390043CA56 /* InfoPlist.strings in Resources */,
-				06A932BE18E9EE390043CA56 /* Main.storyboard in Resources */,
-				06A9331118EB161D0043CA56 /* border.png in Resources */,
+				06A9333018EB21E40043CA56 /* border@2x.png in Resources */,
+				06A9332F18EB21E40043CA56 /* border.png in Resources */,
+				06A9333418EB21E40043CA56 /* Images.xcassets in Resources */,
+				06A9333118EB21E40043CA56 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,13 +283,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06A932C118E9EE390043CA56 /* ViewController.m in Sources */,
-				06A9330D18EA19600043CA56 /* SelectPhotoViewController.m in Sources */,
-				06A932BB18E9EE390043CA56 /* AppDelegate.m in Sources */,
-				06A9331418EB1D450043CA56 /* UIImage+FiltersImage.m in Sources */,
-				06A932E118E9F45B0043CA56 /* FilterClassToName.m in Sources */,
-				06A932B718E9EE390043CA56 /* main.m in Sources */,
-				06A932E518E9F4D90043CA56 /* SwipeView.m in Sources */,
+				06A9333918EB21E40043CA56 /* ViewController.m in Sources */,
+				06A9333618EB21E40043CA56 /* SelectPhotoViewController.m in Sources */,
+				06A9333518EB21E40043CA56 /* main.m in Sources */,
+				06A9333218EB21E40043CA56 /* FilterClassToName.m in Sources */,
+				06A9332D18EB21E40043CA56 /* AppDelegate.m in Sources */,
+				06A9333718EB21E40043CA56 /* SwipeView.m in Sources */,
+				06A9333818EB21E40043CA56 /* UIImage+FiltersImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,32 +306,32 @@
 /* Begin PBXTargetDependency section */
 		06A932CE18E9EE390043CA56 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 06A932A618E9EE390043CA56 /* Filters */;
+			target = 06A932A618E9EE390043CA56 /* FilterVilla */;
 			targetProxy = 06A932CD18E9EE390043CA56 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		06A932B318E9EE390043CA56 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				06A932B418E9EE390043CA56 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		06A932BC18E9EE390043CA56 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				06A932BD18E9EE390043CA56 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		06A932D218E9EE390043CA56 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				06A932D318E9EE390043CA56 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		06A9331818EB21E40043CA56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06A9331918EB21E40043CA56 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		06A9331C18EB21E40043CA56 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06A9331D18EB21E40043CA56 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -417,10 +415,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Filters/Filters-Prefix.pch";
-				INFOPLIST_FILE = "Filters/Filters-Info.plist";
+				GCC_PREFIX_HEADER = "FilterVilla/FilterVilla-Prefix.pch";
+				INFOPLIST_FILE = "FilterVilla/FilterVilla-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FilterVilla;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -431,10 +429,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Filters/Filters-Prefix.pch";
-				INFOPLIST_FILE = "Filters/Filters-Info.plist";
+				GCC_PREFIX_HEADER = "FilterVilla/FilterVilla-Prefix.pch";
+				INFOPLIST_FILE = "FilterVilla/FilterVilla-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FilterVilla;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -454,8 +452,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "FiltersTests/FiltersTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "FiltersTests/FilterVillaTests-Info.plist";
+				PRODUCT_NAME = FilterVillaTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -472,8 +470,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Filters/Filters-Prefix.pch";
-				INFOPLIST_FILE = "FiltersTests/FiltersTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "FiltersTests/FilterVillaTests-Info.plist";
+				PRODUCT_NAME = FilterVillaTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -482,7 +480,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		06A932A218E9EE390043CA56 /* Build configuration list for PBXProject "Filters" */ = {
+		06A932A218E9EE390043CA56 /* Build configuration list for PBXProject "FilterVilla" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				06A932D718E9EE390043CA56 /* Debug */,
@@ -491,21 +489,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		06A932D918E9EE390043CA56 /* Build configuration list for PBXNativeTarget "Filters" */ = {
+		06A932D918E9EE390043CA56 /* Build configuration list for PBXNativeTarget "FilterVilla" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				06A932DA18E9EE390043CA56 /* Debug */,
 				06A932DB18E9EE390043CA56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		06A932DC18E9EE390043CA56 /* Build configuration list for PBXNativeTarget "FiltersTests" */ = {
+		06A932DC18E9EE390043CA56 /* Build configuration list for PBXNativeTarget "FilterVillaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				06A932DD18E9EE390043CA56 /* Debug */,
 				06A932DE18E9EE390043CA56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

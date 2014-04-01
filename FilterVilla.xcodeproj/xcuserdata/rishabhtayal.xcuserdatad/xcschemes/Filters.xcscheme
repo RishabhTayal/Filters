@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "06A932A618E9EE390043CA56"
-               BuildableName = "Filters.app"
-               BlueprintName = "Filters"
-               ReferencedContainer = "container:Filters.xcodeproj">
+               BuildableName = "FilterVilla.app"
+               BlueprintName = "FilterVilla"
+               ReferencedContainer = "container:FilterVilla.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "06A932C718E9EE390043CA56"
-               BuildableName = "FiltersTests.xctest"
-               BlueprintName = "FiltersTests"
-               ReferencedContainer = "container:Filters.xcodeproj">
+               BuildableName = "FilterVillaTests.xctest"
+               BlueprintName = "FilterVillaTests"
+               ReferencedContainer = "container:FilterVilla.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "06A932A618E9EE390043CA56"
-            BuildableName = "Filters.app"
-            BlueprintName = "Filters"
-            ReferencedContainer = "container:Filters.xcodeproj">
+            BuildableName = "FilterVilla.app"
+            BlueprintName = "FilterVilla"
+            ReferencedContainer = "container:FilterVilla.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "06A932A618E9EE390043CA56"
-            BuildableName = "Filters.app"
-            BlueprintName = "Filters"
-            ReferencedContainer = "container:Filters.xcodeproj">
+            BuildableName = "FilterVilla.app"
+            BlueprintName = "FilterVilla"
+            ReferencedContainer = "container:FilterVilla.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "06A932A618E9EE390043CA56"
-            BuildableName = "Filters.app"
-            BlueprintName = "Filters"
-            ReferencedContainer = "container:Filters.xcodeproj">
+            BuildableName = "FilterVilla.app"
+            BlueprintName = "FilterVilla"
+            ReferencedContainer = "container:FilterVilla.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
