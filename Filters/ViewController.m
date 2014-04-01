@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "FilterClassToName.h"
 #import "SwipeView.h"
+#import "UIImage+FiltersImage.h"
 
 @interface ViewController ()
 
@@ -34,11 +35,14 @@
                  @"CIPhotoEffectTransfer",
                  @"CISRGBToneCurveToLinear",
                  @"CIVignetteEffect",
+                 @"CIBloom",
+                 @"CIGaussianBlur"
                  ];
     
     _mainImageView.image = _orgImage;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveImage:)];
 
+    _filtersCollectionView.pagingEnabled = NO;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -70,30 +74,42 @@
 -(UIView *)swipeView:(SwipeView *)swipeView viewForItemAtIndex:(NSInteger)index reusingView:(UIView *)view
 {
     UILabel* label = nil;
+    UIImageView* iv = nil;
     
     if (view == nil) {
         view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, swipeView.bounds.size.height, swipeView.bounds.size.height)];
         view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        
-        UIImageView* iv = [[UIImageView alloc] initWithFrame:view.frame];
+
+        CGRect frame = view.frame;
+        int offset = 5;
+        iv = [[UIImageView alloc] initWithFrame:CGRectMake(frame.origin.x + offset, frame.origin.y + offset, frame.size.height - offset - offset, frame.size.height - offset - offset)];
         iv.contentMode = UIViewContentModeScaleAspectFill;
         iv.clipsToBounds = YES;
-        iv.image = _orgImage;
+        iv.tag = 1;
         [view addSubview:iv];
+        
+        UIImageView* borderIV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, swipeView.bounds.size.height, swipeView.bounds.size.height)];
+        borderIV.contentMode = UIViewContentModeScaleAspectFill;
+        borderIV.clipsToBounds = YES;
+        borderIV.image = [UIImage imageNamed:@"border.png"];
+        [view addSubview:borderIV];
         
         label = [[UILabel alloc] initWithFrame:CGRectMake(0, view.frame.size.height - 40, view.frame.size.width, 40)];
 //        label.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         label.textAlignment = NSTextAlignmentCenter;
         label.textColor = [UIColor whiteColor];
         label.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.6];
-        label.tag = 1;
+        label.tag = 2;
         [view addSubview:label];
     }
     else
     {
-        label = (UILabel*)[view viewWithTag:1];
+        iv = (UIImageView*)[view viewWithTag:1];
+        label = (UILabel*)[view viewWithTag:2];
     }
     
+    UIImage* img = [UIImage scaleAndRotateImage:_orgImage scale:iv.frame.size];
+    iv.image = [self applyFilter:_filters[index] toImage:img];
     label.text = [FilterClassToName filterNameFromClass:[_filters objectAtIndex:index]];
     return view;
 }
@@ -107,8 +123,15 @@
         return;
     }
     
-    CIImage *ciImage = [[CIImage alloc] initWithImage:self.orgImage];
-    CIFilter *filter = [CIFilter filterWithName:_filters[index]
+    UIImage* img = [UIImage scaleAndRotateImage:_orgImage scale:CGSizeZero];
+    
+    self.mainImageView.image = [self applyFilter:_filters[index] toImage:img];
+}
+
+-(UIImage*)applyFilter:(NSString*)filterName toImage:(UIImage*)image
+{
+    CIImage *ciImage = [[CIImage alloc] initWithImage:image];
+    CIFilter *filter = [CIFilter filterWithName:filterName
                                   keysAndValues:kCIInputImageKey, ciImage, nil];
     [filter setDefaults];
     
@@ -116,10 +139,11 @@
     CIImage *outputImage = [filter outputImage];
     CGImageRef cgImage = [context createCGImage:outputImage
                                        fromRect:[outputImage extent]];
-    
-    self.mainImageView.image = [UIImage imageWithCGImage:cgImage];
+    UIImage* returnImage = [UIImage imageWithCGImage:cgImage];
     
     CGImageRelease(cgImage);
+    
+    return returnImage;
 }
 
 #pragma mark -

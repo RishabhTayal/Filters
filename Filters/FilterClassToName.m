@@ -45,7 +45,12 @@
     if ([className isEqualToString:@"CIVignetteEffect"]) {
         return @"Vignette";
     }
-    
+    if ([className isEqualToString:@"CIBloom"]) {
+        return @"Bloom";
+    }
+    if ([className isEqualToString:@"CIGaussianBlur"]) {
+        return @"Blur";
+    }
     return @"Original";
 }
 

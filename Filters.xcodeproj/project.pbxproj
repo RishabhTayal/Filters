@@ -24,6 +24,9 @@
 		06A932E118E9F45B0043CA56 /* FilterClassToName.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A932E018E9F45B0043CA56 /* FilterClassToName.m */; };
 		06A932E518E9F4D90043CA56 /* SwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A932E418E9F4D90043CA56 /* SwipeView.m */; };
 		06A9330D18EA19600043CA56 /* SelectPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9330C18EA19600043CA56 /* SelectPhotoViewController.m */; };
+		06A9330F18EB15F10043CA56 /* border@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A9330E18EB15F10043CA56 /* border@2x.png */; };
+		06A9331118EB161D0043CA56 /* border.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A9331018EB161D0043CA56 /* border.png */; };
+		06A9331418EB1D450043CA56 /* UIImage+FiltersImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9331318EB1D450043CA56 /* UIImage+FiltersImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,10 @@
 		06A932E418E9F4D90043CA56 /* SwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeView.m; sourceTree = "<group>"; };
 		06A9330B18EA19600043CA56 /* SelectPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoViewController.h; sourceTree = "<group>"; };
 		06A9330C18EA19600043CA56 /* SelectPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotoViewController.m; sourceTree = "<group>"; };
+		06A9330E18EB15F10043CA56 /* border@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "border@2x.png"; sourceTree = "<group>"; };
+		06A9331018EB161D0043CA56 /* border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = border.png; sourceTree = "<group>"; };
+		06A9331218EB1D450043CA56 /* UIImage+FiltersImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FiltersImage.h"; sourceTree = "<group>"; };
+		06A9331318EB1D450043CA56 /* UIImage+FiltersImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FiltersImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +138,8 @@
 				06A932C018E9EE390043CA56 /* ViewController.m */,
 				06A932DF18E9F45B0043CA56 /* FilterClassToName.h */,
 				06A932E018E9F45B0043CA56 /* FilterClassToName.m */,
+				06A9331218EB1D450043CA56 /* UIImage+FiltersImage.h */,
+				06A9331318EB1D450043CA56 /* UIImage+FiltersImage.m */,
 				06A932C218E9EE390043CA56 /* Images.xcassets */,
 				06A932B118E9EE390043CA56 /* Supporting Files */,
 			);
@@ -140,6 +149,8 @@
 		06A932B118E9EE390043CA56 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				06A9331018EB161D0043CA56 /* border.png */,
+				06A9330E18EB15F10043CA56 /* border@2x.png */,
 				06A932B218E9EE390043CA56 /* Filters-Info.plist */,
 				06A932B318E9EE390043CA56 /* InfoPlist.strings */,
 				06A932B618E9EE390043CA56 /* main.m */,
@@ -251,9 +262,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06A9330F18EB15F10043CA56 /* border@2x.png in Resources */,
 				06A932C318E9EE390043CA56 /* Images.xcassets in Resources */,
 				06A932B518E9EE390043CA56 /* InfoPlist.strings in Resources */,
 				06A932BE18E9EE390043CA56 /* Main.storyboard in Resources */,
+				06A9331118EB161D0043CA56 /* border.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +288,7 @@
 				06A932C118E9EE390043CA56 /* ViewController.m in Sources */,
 				06A9330D18EA19600043CA56 /* SelectPhotoViewController.m in Sources */,
 				06A932BB18E9EE390043CA56 /* AppDelegate.m in Sources */,
+				06A9331418EB1D450043CA56 /* UIImage+FiltersImage.m in Sources */,
 				06A932E118E9F45B0043CA56 /* FilterClassToName.m in Sources */,
 				06A932B718E9EE390043CA56 /* main.m in Sources */,
 				06A932E518E9F4D90043CA56 /* SwipeView.m in Sources */,
