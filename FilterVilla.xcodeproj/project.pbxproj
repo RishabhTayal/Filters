@@ -26,6 +26,7 @@
 		06A9333718EB21E40043CA56 /* SwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9332818EB21E40043CA56 /* SwipeView.m */; };
 		06A9333818EB21E40043CA56 /* UIImage+FiltersImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9332A18EB21E40043CA56 /* UIImage+FiltersImage.m */; };
 		06A9333918EB21E40043CA56 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9332C18EB21E40043CA56 /* ViewController.m */; };
+		06A9333B18EB3D950043CA56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A9331818EB21E40043CA56 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -264,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06A9333B18EB3D950043CA56 /* Main.storyboard in Resources */,
 				06A9333018EB21E40043CA56 /* border@2x.png in Resources */,
 				06A9332F18EB21E40043CA56 /* border.png in Resources */,
 				06A9333418EB21E40043CA56 /* Images.xcassets in Resources */,
