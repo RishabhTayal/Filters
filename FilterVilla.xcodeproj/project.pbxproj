@@ -232,6 +232,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Appikon;
 				TargetAttributes = {
+					06A932A618E9EE390043CA56 = {
+						DevelopmentTeam = GJ7VFS8326;
+					};
 					06A932C718E9EE390043CA56 = {
 						TestTargetID = 06A932A618E9EE390043CA56;
 					};
@@ -414,6 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FilterVilla/FilterVilla-Prefix.pch";
 				INFOPLIST_FILE = "FilterVilla/FilterVilla-Info.plist";
@@ -428,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FilterVilla/FilterVilla-Prefix.pch";
 				INFOPLIST_FILE = "FilterVilla/FilterVilla-Info.plist";

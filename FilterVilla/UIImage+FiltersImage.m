@@ -16,8 +16,8 @@
     int kMaxResolutionHeight = 640;
     
     if (!CGSizeEqualToSize(size, CGSizeZero)) {
-        kMaxResolutionWidth = size.width;
-        kMaxResolutionHeight = size.height;
+        kMaxResolutionWidth = size.width * 2;
+        kMaxResolutionHeight = size.height * 2;
     }
 
     

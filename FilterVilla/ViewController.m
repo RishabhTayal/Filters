@@ -109,7 +109,11 @@
     }
     
     UIImage* img = [UIImage scaleAndRotateImage:_orgImage scale:iv.frame.size];
-    iv.image = [self applyFilter:_filters[index] toImage:img];
+    if (index == 0) {
+        iv.image = img;
+    }else {
+        iv.image = [self applyFilter:_filters[index] toImage:img];
+    }
     label.text = [FilterClassToName filterNameFromClass:[_filters objectAtIndex:index]];
     return view;
 }
