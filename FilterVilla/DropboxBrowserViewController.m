@@ -58,7 +58,7 @@ static NSUInteger const kDBSignOutAlertViewTag = 3;
 @end
 
 @implementation DropboxBrowserViewController
-@synthesize downloadProgressView, currentPath, rootViewDelegate, fileList;
+@synthesize downloadProgressView, currentPath, rootViewDelegate, fileList, shouldShowLogoutButton;
 @synthesize allowedFileTypes, tableCellID, deliverDownloadNotifications, shouldDisplaySearchBar;
 static NSString *currentFileName = nil;
 
@@ -93,9 +93,12 @@ static NSString *currentFileName = nil;
     
     // Setup Navigation Bar, use different styles for iOS 7 and higher
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(removeDropboxBrowser)];
-    // UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithTitle:@"Logout" style:UIBarButtonItemStylePlain target:self action:@selector(logoutDropbox)];
     self.navigationItem.rightBarButtonItem = rightButton;
-    // self.navigationItem.leftBarButtonItem = leftButton;
+    
+    if (shouldShowLogoutButton) {
+        UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithTitle:@"Logout" style:UIBarButtonItemStylePlain target:self action:@selector(logoutDropbox)];
+        self.navigationItem.leftBarButtonItem = leftButton;
+    }
     
     if (shouldDisplaySearchBar == YES) {
         // Create Search Bar

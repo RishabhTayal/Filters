@@ -12,6 +12,5 @@
 @interface SelectPhotoViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate, DropboxBrowserDelegate>
 
 -(IBAction)loadPhotosClicked:(id)sender;
--(IBAction)loadDropboxPhotos:(id)sender;
 
 @end

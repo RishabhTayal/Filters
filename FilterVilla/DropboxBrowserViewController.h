@@ -74,6 +74,9 @@ typedef enum kDBFileConflictError : NSInteger {
 /// Set whether DropboxBrowserViewController should display a search bar
 @property BOOL shouldDisplaySearchBar;
 
+///Set whether should show logout button
+@property BOOL shouldShowLogoutButton;
+
 /// Get the currently (or most recently selected) file name
 + (NSString *)fileName;
 
