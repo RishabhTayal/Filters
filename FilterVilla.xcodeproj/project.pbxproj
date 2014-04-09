@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060B129C18F5D45200FB4FB9 /* DropboxBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 060B129B18F5D45200FB4FB9 /* DropboxBrowserViewController.m */; };
+		060B129E18F5D49F00FB4FB9 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060B129D18F5D49F00FB4FB9 /* DropboxSDK.framework */; };
 		06A932AB18E9EE390043CA56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AA18E9EE390043CA56 /* Foundation.framework */; };
 		06A932AD18E9EE390043CA56 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AC18E9EE390043CA56 /* CoreGraphics.framework */; };
 		06A932AF18E9EE390043CA56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AE18E9EE390043CA56 /* UIKit.framework */; };
@@ -40,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		060B129A18F5D45200FB4FB9 /* DropboxBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropboxBrowserViewController.h; sourceTree = "<group>"; };
+		060B129B18F5D45200FB4FB9 /* DropboxBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropboxBrowserViewController.m; sourceTree = "<group>"; };
+		060B129D18F5D49F00FB4FB9 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
 		06A932A718E9EE390043CA56 /* FilterVilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilterVilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A932AA18E9EE390043CA56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		06A932AC18E9EE390043CA56 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -76,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				060B129E18F5D49F00FB4FB9 /* DropboxSDK.framework in Frameworks */,
 				06A932AD18E9EE390043CA56 /* CoreGraphics.framework in Frameworks */,
 				06A932AF18E9EE390043CA56 /* UIKit.framework in Frameworks */,
 				06A932AB18E9EE390043CA56 /* Foundation.framework in Frameworks */,
@@ -117,6 +123,7 @@
 		06A932A918E9EE390043CA56 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				060B129D18F5D49F00FB4FB9 /* DropboxSDK.framework */,
 				06A932AA18E9EE390043CA56 /* Foundation.framework */,
 				06A932AC18E9EE390043CA56 /* CoreGraphics.framework */,
 				06A932AE18E9EE390043CA56 /* UIKit.framework */,
@@ -146,6 +153,8 @@
 		06A9331518EB21E40043CA56 /* FilterVilla */ = {
 			isa = PBXGroup;
 			children = (
+				060B129A18F5D45200FB4FB9 /* DropboxBrowserViewController.h */,
+				060B129B18F5D45200FB4FB9 /* DropboxBrowserViewController.m */,
 				06A9332618EB21E40043CA56 /* SwipeView */,
 				06A9331618EB21E40043CA56 /* AppDelegate.h */,
 				06A9331718EB21E40043CA56 /* AppDelegate.m */,
@@ -290,6 +299,7 @@
 			files = (
 				06A9333918EB21E40043CA56 /* ViewController.m in Sources */,
 				06A9333618EB21E40043CA56 /* SelectPhotoViewController.m in Sources */,
+				060B129C18F5D45200FB4FB9 /* DropboxBrowserViewController.m in Sources */,
 				06A9333518EB21E40043CA56 /* main.m in Sources */,
 				06A9333218EB21E40043CA56 /* FilterClassToName.m in Sources */,
 				06A9332D18EB21E40043CA56 /* AppDelegate.m in Sources */,
@@ -420,6 +430,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FilterVilla/FilterVilla-Prefix.pch";
 				INFOPLIST_FILE = "FilterVilla/FilterVilla-Info.plist";
@@ -436,6 +450,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: rishabh tayal (GJ7VFS8326)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: rishabh tayal (GJ7VFS8326)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FilterVilla/FilterVilla-Prefix.pch";
 				INFOPLIST_FILE = "FilterVilla/FilterVilla-Info.plist";

@@ -8,6 +8,8 @@
 
 #import "SelectPhotoViewController.h"
 #import "ViewController.h"
+#import <DropboxSDK/DropboxSDK.h>
+#import "AppDelegate.h"
 
 @interface SelectPhotoViewController ()
 
@@ -104,6 +106,60 @@
         ViewController* vc = segue.destinationViewController;
         vc.orgImage = _image;
     }
+    if ([[segue identifier] isEqualToString:@"showDropboxBrowser"]) {
+        // Get reference to the destination view controller
+        UINavigationController *navigationController = [segue destinationViewController];
+        
+        // Pass any objects to the view controller here, like...
+        DropboxBrowserViewController *dropboxBrowser = (DropboxBrowserViewController *)navigationController.topViewController;
+        
+        // dropboxBrowser.allowedFileTypes = @[@"doc", @"pdf"]; // Uncomment to filter file types. Create an array of allowed types. To allow all file types simply don't set the property
+        // dropboxBrowser.tableCellID = @"DropboxBrowserCell"; // Uncomment to use a custom UITableViewCell ID. This property is not required
+        
+        // When a file is downloaded (either successfully or unsuccessfully) you can have DBBrowser notify the user with Notification Center. Default property is NO.
+        dropboxBrowser.deliverDownloadNotifications = YES;
+        
+        // Dropbox Browser can display a UISearchBar to allow the user to search their Dropbox for a file or folder. Default property is NO.
+        dropboxBrowser.shouldDisplaySearchBar = YES;
+        
+        // Set the delegate property to recieve delegate method calls
+        dropboxBrowser.rootViewDelegate = self;
+    }
+}
+
+- (void)dropboxBrowser:(DropboxBrowserViewController *)browser didDownloadFile:(NSString *)fileName didOverwriteFile:(BOOL)isLocalFileOverwritten {
+    if (isLocalFileOverwritten == YES) {
+        NSLog(@"Downloaded %@ by overwriting local file", fileName);
+    } else {
+        NSLog(@"Downloaded %@ without overwriting", fileName);
+    }
+    
+    NSData* imageData = [NSData dataWithContentsOfFile:[[AppDelegate applicationDocumentsDirectory] stringByAppendingPathComponent:fileName]];
+    UIImage* image = [UIImage imageWithData:imageData];
+    _image = image;
+    [self dismissViewControllerAnimated:YES completion:^{
+        [self performSegueWithIdentifier:@"ViewControllerSegue" sender:self];
+    }];
+}
+
+- (void)dropboxBrowser:(DropboxBrowserViewController *)browser didFailToDownloadFile:(NSString *)fileName {
+    NSLog(@"Failed to download %@", fileName);
+}
+
+- (void)dropboxBrowser:(DropboxBrowserViewController *)browser fileConflictWithLocalFile:(NSURL *)localFileURL withDropboxFile:(DBMetadata *)dropboxFile withError:(NSError *)error {
+    NSLog(@"File conflict between %@ and %@\n%@ last modified on %@\nError: %@", localFileURL.lastPathComponent, dropboxFile.filename, dropboxFile.filename, dropboxFile.lastModifiedDate, error);
+}
+
+- (void)dropboxBrowserDismissed:(DropboxBrowserViewController *)browser {
+    // This method is called after Dropbox Browser is dismissed. Do NOT dismiss DropboxBrowser from this method
+    // Perform any UI updates here to display any new data from Dropbox Browser
+    // ex. Update a UITableView that shows downloaded files or get the name of the most recently selected file:
+    //     NSString *fileName = [DropboxBrowserViewController fileName];
+}
+
+- (void)dropboxBrowser:(DropboxBrowserViewController *)browser deliveredFileDownloadNotification:(UILocalNotification *)notification {
+    long badgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber]+1;
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:badgeNumber];
 }
 
 @end
