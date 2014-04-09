@@ -93,6 +93,7 @@
 		060B13EE18F5E5E000FB4FB9 /* page_white_word@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 060B139A18F5E5E000FB4FB9 /* page_white_word@2x.png */; };
 		060B13EF18F5E5E000FB4FB9 /* pages.png in Resources */ = {isa = PBXBuildFile; fileRef = 060B139B18F5E5E000FB4FB9 /* pages.png */; };
 		060B13F018F5E5E000FB4FB9 /* pages@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 060B139C18F5E5E000FB4FB9 /* pages@2x.png */; };
+		060B13F418F5F17300FB4FB9 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060B13F318F5F17200FB4FB9 /* iAd.framework */; };
 		06A932AB18E9EE390043CA56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AA18E9EE390043CA56 /* Foundation.framework */; };
 		06A932AD18E9EE390043CA56 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AC18E9EE390043CA56 /* CoreGraphics.framework */; };
 		06A932AF18E9EE390043CA56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AE18E9EE390043CA56 /* UIKit.framework */; };
@@ -213,6 +214,7 @@
 		060B139A18F5E5E000FB4FB9 /* page_white_word@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page_white_word@2x.png"; sourceTree = "<group>"; };
 		060B139B18F5E5E000FB4FB9 /* pages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pages.png; sourceTree = "<group>"; };
 		060B139C18F5E5E000FB4FB9 /* pages@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pages@2x.png"; sourceTree = "<group>"; };
+		060B13F318F5F17200FB4FB9 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		06A932A718E9EE390043CA56 /* FilterVilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilterVilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A932AA18E9EE390043CA56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		06A932AC18E9EE390043CA56 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -249,6 +251,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				060B13F418F5F17300FB4FB9 /* iAd.framework in Frameworks */,
 				060B129E18F5D49F00FB4FB9 /* DropboxSDK.framework in Frameworks */,
 				06A932AD18E9EE390043CA56 /* CoreGraphics.framework in Frameworks */,
 				06A932AF18E9EE390043CA56 /* UIKit.framework in Frameworks */,
@@ -400,6 +403,7 @@
 		06A932A918E9EE390043CA56 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				060B13F318F5F17200FB4FB9 /* iAd.framework */,
 				060B129D18F5D49F00FB4FB9 /* DropboxSDK.framework */,
 				06A932AA18E9EE390043CA56 /* Foundation.framework */,
 				06A932AC18E9EE390043CA56 /* CoreGraphics.framework */,

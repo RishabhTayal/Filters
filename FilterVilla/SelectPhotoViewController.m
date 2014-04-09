@@ -13,7 +13,7 @@
 
 @interface SelectPhotoViewController ()
 
-@property (nonatomic, strong) UIImage* image;
+@property (strong) UIImage* image;
 
 @end
 
@@ -31,6 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.canDisplayBannerAds = YES;
     // Do any additional setup after loading the view.
 }
 
@@ -39,7 +40,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 -(IBAction)loadPhotosClicked:(id)sender
 {

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "DropboxBrowserViewController.h"
+#import <iAd/iAd.h>
 
-@interface SelectPhotoViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate, DropboxBrowserDelegate>
+@interface SelectPhotoViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate, DropboxBrowserDelegate, ADBannerViewDelegate>
 
 -(IBAction)loadPhotosClicked:(id)sender;
 
