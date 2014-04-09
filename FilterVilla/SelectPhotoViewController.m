@@ -147,6 +147,13 @@
 }
 
 - (void)dropboxBrowser:(DropboxBrowserViewController *)browser fileConflictWithLocalFile:(NSURL *)localFileURL withDropboxFile:(DBMetadata *)dropboxFile withError:(NSError *)error {
+
+    NSData* imageData = [NSData dataWithContentsOfURL:localFileURL];
+    UIImage* img = [UIImage imageWithData:imageData];
+    _image = img;
+    [self dismissViewControllerAnimated:YES completion:^{
+        [self performSegueWithIdentifier:@"ViewControllerSegue" sender:self];
+    }];
     NSLog(@"File conflict between %@ and %@\n%@ last modified on %@\nError: %@", localFileURL.lastPathComponent, dropboxFile.filename, dropboxFile.filename, dropboxFile.lastModifiedDate, error);
 }
 
@@ -158,8 +165,6 @@
 }
 
 - (void)dropboxBrowser:(DropboxBrowserViewController *)browser deliveredFileDownloadNotification:(UILocalNotification *)notification {
-    long badgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber]+1;
-    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:badgeNumber];
 }
 
 @end

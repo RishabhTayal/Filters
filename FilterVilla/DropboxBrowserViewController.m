@@ -584,9 +584,9 @@ static NSString *currentFileName = nil;
             
             if (result == NSOrderedAscending) {
                 // Dropbox file is older than local file
-                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"File Conflict" message:[NSString stringWithFormat:@"%@ has already been downloaded from Dropbox. You can overwrite the local version with the Dropbox one. The file in local files is newer than the Dropbox file.", file.filename] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Overwrite", nil];
-                alertView.tag = kFileExistsAlertViewTag;
-                [alertView show];
+//                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"File Conflict" message:[NSString stringWithFormat:@"%@ has already been downloaded from Dropbox. You can overwrite the local version with the Dropbox one. The file in local files is newer than the Dropbox file.", file.filename] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Overwrite", nil];
+//                alertView.tag = kFileExistsAlertViewTag;
+//                [alertView show];
                 
                 NSDictionary *infoDictionary = @{@"file": file, @"message": @"File already exists in Dropbox and locally. The local file is newer."};
                 NSError *error = [NSError errorWithDomain:@"[DropboxBrowser] File Conflict Error: File already exists in Dropbox and locally. The local file is newer." code:kDBDropboxFileOlderError userInfo:infoDictionary];
@@ -602,10 +602,10 @@ static NSString *currentFileName = nil;
                 
             } else if (result == NSOrderedDescending) {
                 // Dropbox file is newer than local file
-                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"File Conflict" message:[NSString stringWithFormat:@"%@ has already been downloaded from Dropbox. You can overwrite the local version with the Dropbox file. The file in Dropbox is newer than the local file.", file.filename] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Overwrite", nil];
-                alertView.tag = kFileExistsAlertViewTag;
-                [alertView show];
-                
+//                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"File Conflict" message:[NSString stringWithFormat:@"%@ has already been downloaded from Dropbox. You can overwrite the local version with the Dropbox file. The file in Dropbox is newer than the local file.", file.filename] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Overwrite", nil];
+//                alertView.tag = kFileExistsAlertViewTag;
+//                [alertView show];
+
                 NSDictionary *infoDictionary = @{@"file": file, @"message": @"File already exists in Dropbox and locally. The Dropbox file is newer."};
                 NSError *error = [NSError errorWithDomain:@"[DropboxBrowser] File Conflict Error: File already exists in Dropbox and locally. The Dropbox file is newer." code:kDBDropboxFileNewerError userInfo:infoDictionary];
                 
@@ -619,10 +619,10 @@ static NSString *currentFileName = nil;
                 }
             } else if (result == NSOrderedSame) {
                 // Dropbox File and local file were both modified at the same time
-                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"File Conflict" message:[NSString stringWithFormat:@"%@ has already been downloaded from Dropbox. You can overwrite the local version with the Dropbox file. Both the local file and the Dropbox file were modified at the same time.", file.filename] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Overwrite", nil];
-                alertView.tag = kFileExistsAlertViewTag;
-                [alertView show];
-                
+//                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"File Conflict" message:[NSString stringWithFormat:@"%@ has already been downloaded from Dropbox. You can overwrite the local version with the Dropbox file. Both the local file and the Dropbox file were modified at the same time.", file.filename] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Overwrite", nil];
+//                alertView.tag = kFileExistsAlertViewTag;
+//                [alertView show];
+
                 NSDictionary *infoDictionary = @{@"file": file, @"message": @"File already exists in Dropbox and locally. Both files were modified at the same time."};
                 NSError *error = [NSError errorWithDomain:@"[DropboxBrowser] File Conflict Error: File already exists in Dropbox and locally. Both files were modified at the same time." code:kDBDropboxFileSameAsLocalFileError userInfo:infoDictionary];
                 
