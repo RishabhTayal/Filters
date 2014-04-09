@@ -360,6 +360,24 @@
 			path = Graphics;
 			sourceTree = "<group>";
 		};
+		060B13F118F5E63A00FB4FB9 /* Filter Helper */ = {
+			isa = PBXGroup;
+			children = (
+				06A9331E18EB21E40043CA56 /* FilterClassToName.h */,
+				06A9331F18EB21E40043CA56 /* FilterClassToName.m */,
+			);
+			name = "Filter Helper";
+			sourceTree = "<group>";
+		};
+		060B13F218F5E64C00FB4FB9 /* UIImage Category */ = {
+			isa = PBXGroup;
+			children = (
+				06A9332918EB21E40043CA56 /* UIImage+FiltersImage.h */,
+				06A9332A18EB21E40043CA56 /* UIImage+FiltersImage.m */,
+			);
+			name = "UIImage Category";
+			sourceTree = "<group>";
+		};
 		06A9329E18E9EE390043CA56 = {
 			isa = PBXGroup;
 			children = (
@@ -412,18 +430,16 @@
 		06A9331518EB21E40043CA56 /* FilterVilla */ = {
 			isa = PBXGroup;
 			children = (
+				06A9332618EB21E40043CA56 /* SwipeView */,
+				060B13F118F5E63A00FB4FB9 /* Filter Helper */,
+				060B13F218F5E64C00FB4FB9 /* UIImage Category */,
 				060B129A18F5D45200FB4FB9 /* DropboxBrowserViewController.h */,
 				060B129B18F5D45200FB4FB9 /* DropboxBrowserViewController.m */,
-				06A9332618EB21E40043CA56 /* SwipeView */,
 				06A9331618EB21E40043CA56 /* AppDelegate.h */,
 				06A9331718EB21E40043CA56 /* AppDelegate.m */,
 				06A9331818EB21E40043CA56 /* Main.storyboard */,
-				06A9331E18EB21E40043CA56 /* FilterClassToName.h */,
-				06A9331F18EB21E40043CA56 /* FilterClassToName.m */,
 				06A9332418EB21E40043CA56 /* SelectPhotoViewController.h */,
 				06A9332518EB21E40043CA56 /* SelectPhotoViewController.m */,
-				06A9332918EB21E40043CA56 /* UIImage+FiltersImage.h */,
-				06A9332A18EB21E40043CA56 /* UIImage+FiltersImage.m */,
 				06A9332B18EB21E40043CA56 /* ViewController.h */,
 				06A9332C18EB21E40043CA56 /* ViewController.m */,
 				06A9332218EB21E40043CA56 /* Images.xcassets */,
