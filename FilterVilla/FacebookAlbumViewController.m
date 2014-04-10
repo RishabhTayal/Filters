@@ -7,12 +7,14 @@
 //
 
 #import "FacebookAlbumViewController.h"
-#import <FacebookSDK/FacebookSDK.h>
 #import "FacebookPhotoViewController.h"
+#import "UIImageView+AFNetworking.h"
+#import "FacebookAlbumTableViewCell.h"
 
 @interface FacebookAlbumViewController ()
 
 @property (strong) NSMutableArray* datasource;
+@property (strong) NSMutableArray* albumCoverArray;
 
 @end
 
@@ -66,6 +68,23 @@
     [FBRequestConnection startWithGraphPath:graphPath parameters:nil HTTPMethod:@"GET" completionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
         NSDictionary* resultDict = (NSDictionary*)result;
         _datasource = [NSMutableArray arrayWithArray:[resultDict objectForKey:@"data"]];
+        _albumCoverArray = [[NSMutableArray alloc] initWithCapacity:_datasource.count];
+        
+        for (int i = 0 ; i < _datasource.count; i++) {
+            
+            NSString* graphPath = [NSString stringWithFormat:@"/%@/picture", [[_datasource objectAtIndex:i] objectForKey:@"id"]];
+            NSDictionary* params = [NSDictionary dictionaryWithObjectsAndKeys:@"album", @"type", nil];
+            [FBRequestConnection startWithGraphPath:graphPath parameters:params HTTPMethod:@"GET" completionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+                NSLog(@"%@", connection.urlResponse.URL);
+                NSDictionary* dict = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:i], @"index" , connection.urlResponse.URL, @"URL", nil];
+                [_albumCoverArray addObject:dict];
+                if (i==_datasource.count) {
+                    [self.tableView reloadData];
+                }
+            }];
+        }
+        
+        
         [self.tableView reloadData];
     }];
 }
@@ -108,18 +127,19 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    FacebookAlbumTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"FacebookAlbumTableViewCell" owner:self options:nil] lastObject];
+        //        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
     }
     
-    cell.textLabel.text = [[_datasource objectAtIndex:indexPath.row] objectForKey:@"name"];
+    cell.albumNameLabel.text = [[_datasource objectAtIndex:indexPath.row] objectForKey:@"name"];
     
-//    NSString* graphPath = [NSString stringWithFormat:@"/%@/picture", [[_datasource objectAtIndex:indexPath.row] objectForKey:@"id"]];
-//    NSDictionary* params = [NSDictionary dictionaryWithObjectsAndKeys:@"thumbnail", @"type", nil];
-//    [FBRequestConnection startWithGraphPath:graphPath parameters:params HTTPMethod:@"GET" completionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
-//        NSLog(@"%@", result);
-//    }];
+    for (NSDictionary* dict in _albumCoverArray) {
+        if ([[dict objectForKey:@"index"] intValue] == indexPath.row) {
+            [cell.thumbImage setImageWithURL:[dict objectForKey:@"URL"]];
+        }
+    }
     return cell;
 }
 

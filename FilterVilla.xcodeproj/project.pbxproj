@@ -114,6 +114,12 @@
 		0633A93F18F707B5005BEFED /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0633A93418F707B5005BEFED /* AFURLRequestSerialization.m */; };
 		0633A94018F707B5005BEFED /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0633A93618F707B5005BEFED /* AFURLResponseSerialization.m */; };
 		0633A94118F707B5005BEFED /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0633A93818F707B5005BEFED /* AFURLSessionManager.m */; };
+		0633A94518F72776005BEFED /* FacebookAlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0633A94318F72776005BEFED /* FacebookAlbumTableViewCell.m */; };
+		0633A94618F72776005BEFED /* FacebookAlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0633A94418F72776005BEFED /* FacebookAlbumTableViewCell.xib */; };
+		0633A95018F72C10005BEFED /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0633A94F18F72C10005BEFED /* libGoogleAnalyticsServices.a */; };
+		0633A95218F72D23005BEFED /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0633A95118F72D23005BEFED /* SystemConfiguration.framework */; };
+		0633A95418F72D30005BEFED /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0633A95318F72D30005BEFED /* CoreData.framework */; };
+		0633A95618F72D3F005BEFED /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0633A95518F72D3F005BEFED /* libz.dylib */; };
 		06A932AB18E9EE390043CA56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AA18E9EE390043CA56 /* Foundation.framework */; };
 		06A932AD18E9EE390043CA56 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AC18E9EE390043CA56 /* CoreGraphics.framework */; };
 		06A932AF18E9EE390043CA56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AE18E9EE390043CA56 /* UIKit.framework */; };
@@ -276,6 +282,19 @@
 		0633A93618F707B5005BEFED /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		0633A93718F707B5005BEFED /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		0633A93818F707B5005BEFED /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		0633A94218F72776005BEFED /* FacebookAlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookAlbumTableViewCell.h; sourceTree = "<group>"; };
+		0633A94318F72776005BEFED /* FacebookAlbumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookAlbumTableViewCell.m; sourceTree = "<group>"; };
+		0633A94418F72776005BEFED /* FacebookAlbumTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacebookAlbumTableViewCell.xib; sourceTree = "<group>"; };
+		0633A94918F72B99005BEFED /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		0633A94A18F72B99005BEFED /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		0633A94B18F72B99005BEFED /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		0633A94C18F72B99005BEFED /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		0633A94D18F72B99005BEFED /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		0633A94E18F72B99005BEFED /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		0633A94F18F72C10005BEFED /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		0633A95118F72D23005BEFED /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0633A95318F72D30005BEFED /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0633A95518F72D3F005BEFED /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		06A932A718E9EE390043CA56 /* FilterVilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilterVilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A932AA18E9EE390043CA56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		06A932AC18E9EE390043CA56 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -312,9 +331,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0633A95618F72D3F005BEFED /* libz.dylib in Frameworks */,
+				0633A95418F72D30005BEFED /* CoreData.framework in Frameworks */,
+				0633A95218F72D23005BEFED /* SystemConfiguration.framework in Frameworks */,
 				060B13F418F5F17300FB4FB9 /* iAd.framework in Frameworks */,
 				060B129E18F5D49F00FB4FB9 /* DropboxSDK.framework in Frameworks */,
 				06A932AD18E9EE390043CA56 /* CoreGraphics.framework in Frameworks */,
+				0633A95018F72C10005BEFED /* libGoogleAnalyticsServices.a in Frameworks */,
 				06A932AF18E9EE390043CA56 /* UIKit.framework in Frameworks */,
 				06A932AB18E9EE390043CA56 /* Foundation.framework in Frameworks */,
 				060B143E18F7006F00FB4FB9 /* FacebookSDK.framework in Frameworks */,
@@ -446,6 +469,7 @@
 		060B143B18F6FFD600FB4FB9 /* Facebook View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0633A94718F7277C005BEFED /* Cell */,
 				060B143818F6FFCF00FB4FB9 /* FacebookAlbumViewController.h */,
 				060B143918F6FFCF00FB4FB9 /* FacebookAlbumViewController.m */,
 				060B143F18F7019300FB4FB9 /* FacebookPhotoViewController.h */,
@@ -514,6 +538,30 @@
 			path = "UIKit+AFNetworking/AFNetworking";
 			sourceTree = "<group>";
 		};
+		0633A94718F7277C005BEFED /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0633A94218F72776005BEFED /* FacebookAlbumTableViewCell.h */,
+				0633A94318F72776005BEFED /* FacebookAlbumTableViewCell.m */,
+				0633A94418F72776005BEFED /* FacebookAlbumTableViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		0633A94818F72B99005BEFED /* GA Library */ = {
+			isa = PBXGroup;
+			children = (
+				0633A94918F72B99005BEFED /* GAI.h */,
+				0633A94A18F72B99005BEFED /* GAIDictionaryBuilder.h */,
+				0633A94B18F72B99005BEFED /* GAIFields.h */,
+				0633A94C18F72B99005BEFED /* GAILogger.h */,
+				0633A94D18F72B99005BEFED /* GAITrackedViewController.h */,
+				0633A94E18F72B99005BEFED /* GAITracker.h */,
+			);
+			name = "GA Library";
+			path = Library;
+			sourceTree = "<group>";
+		};
 		06A9329E18E9EE390043CA56 = {
 			isa = PBXGroup;
 			children = (
@@ -536,6 +584,10 @@
 		06A932A918E9EE390043CA56 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0633A95518F72D3F005BEFED /* libz.dylib */,
+				0633A95318F72D30005BEFED /* CoreData.framework */,
+				0633A95118F72D23005BEFED /* SystemConfiguration.framework */,
+				0633A94F18F72C10005BEFED /* libGoogleAnalyticsServices.a */,
 				060B143D18F7006F00FB4FB9 /* FacebookSDK.framework */,
 				060B13F318F5F17200FB4FB9 /* iAd.framework */,
 				060B129D18F5D49F00FB4FB9 /* DropboxSDK.framework */,
@@ -568,6 +620,7 @@
 		06A9331518EB21E40043CA56 /* FilterVilla */ = {
 			isa = PBXGroup;
 			children = (
+				0633A94818F72B99005BEFED /* GA Library */,
 				0633A92518F707B5005BEFED /* AFNetworking */,
 				0633A90B18F7076E005BEFED /* UIKit+AFNetworking */,
 				06A9332618EB21E40043CA56 /* SwipeView */,
@@ -745,6 +798,7 @@
 				060B13C918F5E5E000FB4FB9 /* page_white_excel.png in Resources */,
 				060B13A318F5E5E000FB4FB9 /* folder_camera_upload.png in Resources */,
 				060B13BB18F5E5E000FB4FB9 /* page_white_c.png in Resources */,
+				0633A94618F72776005BEFED /* FacebookAlbumTableViewCell.xib in Resources */,
 				060B13AD18F5E5E000FB4FB9 /* keynote.png in Resources */,
 				060B139F18F5E5E000FB4FB9 /* folder_app.png in Resources */,
 				060B13D818F5E5E000FB4FB9 /* page_white_js@2x.png in Resources */,
@@ -822,6 +876,7 @@
 				06A9333718EB21E40043CA56 /* SwipeView.m in Sources */,
 				0633A92318F7076F005BEFED /* UIRefreshControl+AFNetworking.m in Sources */,
 				0633A92118F7076F005BEFED /* UIImageView+AFNetworking.m in Sources */,
+				0633A94518F72776005BEFED /* FacebookAlbumTableViewCell.m in Sources */,
 				0633A93C18F707B5005BEFED /* AFNetworkReachabilityManager.m in Sources */,
 				06A9333818EB21E40043CA56 /* UIImage+FiltersImage.m in Sources */,
 			);
@@ -957,6 +1012,10 @@
 				GCC_PREFIX_HEADER = "FilterVilla/FilterVilla-Prefix.pch";
 				INFOPLIST_FILE = "FilterVilla/FilterVilla-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = FilterVilla;
 				WRAPPER_EXTENSION = app;
 			};
@@ -977,6 +1036,10 @@
 				GCC_PREFIX_HEADER = "FilterVilla/FilterVilla-Prefix.pch";
 				INFOPLIST_FILE = "FilterVilla/FilterVilla-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = FilterVilla;
 				PROVISIONING_PROFILE = "A3A4B2D8-9CA8-4C14-B7F2-05642066089A";
 				WRAPPER_EXTENSION = app;

@@ -8,11 +8,21 @@
 
 #import "AppDelegate.h"
 #import <DropboxSDK/DropboxSDK.h>
+#import "GAI.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    
+    [GAI sharedInstance].dispatchInterval = 20;
+    
+    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
+    
+    [[GAI sharedInstance] trackerWithTrackingId:@"UA-40631521-3"];
+    
     // Override point for customization after application launch.
     DBSession *dbSession = [[DBSession alloc] initWithAppKey:@"tddpb6453wzu0ta" appSecret:@"s8gjjk7w3adq9ff" root:kDBRootDropbox];
     [DBSession setSharedSession:dbSession];

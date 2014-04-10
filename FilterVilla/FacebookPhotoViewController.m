@@ -24,7 +24,6 @@
     
     _datasource = [[NSMutableArray alloc] init];
     
-    //    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
     [self sendRequest];
     // Do any additional setup after loading the view.
 }

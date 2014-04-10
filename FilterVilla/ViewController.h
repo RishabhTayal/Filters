@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "SwipeView.h"
-
-@interface ViewController : UIViewController<UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, SwipeViewDataSource, SwipeViewDelegate>
+#import "GAITrackedViewController.h"
+@interface ViewController : GAITrackedViewController<UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, SwipeViewDataSource, SwipeViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UIImageView* mainImageView;
 @property (nonatomic, strong) IBOutlet SwipeView* filtersCollectionView;

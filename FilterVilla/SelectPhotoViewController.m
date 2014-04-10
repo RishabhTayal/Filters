@@ -10,6 +10,9 @@
 #import "ViewController.h"
 #import <DropboxSDK/DropboxSDK.h>
 #import "AppDelegate.h"
+#import "GAITracker.h"
+#import "GAIDictionaryBuilder.h"
+#import "GAI.h"
 
 @interface SelectPhotoViewController ()
 
@@ -35,6 +38,12 @@
     // Do any additional setup after loading the view.
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.screenName = @"Photo Select Screen";
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -43,18 +52,18 @@
 
 -(IBAction)loadPhotosClicked:(id)sender
 {
-    //    UIActionSheet* actionSheet = [[UIActionSheet alloc] initWithTitle:@"Import Photo" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Library", @"Camera", @"Facebook", nil];
-    //    [actionSheet showInView:self.view];
-    
     UIButton* button = (UIButton*)sender;
     
     UIImagePickerController* imagePicker = [[UIImagePickerController alloc] init];
     imagePicker.delegate = self;
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
     if (button.tag == 1) {
+        [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"ui_action" action:@"ui_button" label:@"Photo Library" value:nil] build]];
         [imagePicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
         [self presentViewController:imagePicker animated:YES completion:nil];
     }
     if (button.tag == 2) {
+        [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"ui_action" action:@"ui_button" label:@"Camera" value:nil] build]];
         [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
         [self presentViewController:imagePicker animated:YES completion:nil];
     }
@@ -62,25 +71,6 @@
         
     }
 }
-
-//#pragma mark - UIActionSheet Delegate
-//
-//-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
-//{
-//    NSLog(@"%d", buttonIndex);
-//    if (buttonIndex == 0) {
-//        UIImagePickerController* imagePicker = [[UIImagePickerController alloc] init];
-//        [imagePicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
-//        imagePicker.delegate = self;
-//        [self presentViewController:imagePicker animated:YES completion:nil];
-//    }
-//    if (buttonIndex == 1) {
-//        UIImagePickerController* imagePicker = [[UIImagePickerController alloc] init];
-//        [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
-//        imagePicker.delegate = self;
-//        [self presentViewController:imagePicker animated:YES completion:nil];
-//    }
-//}
 
 #pragma mark - UIImagePickerController Delegate
 
@@ -102,11 +92,13 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
     if ([segue.identifier isEqualToString:@"ViewControllerSegue"]) {
         ViewController* vc = segue.destinationViewController;
         vc.orgImage = _image;
     }
     if ([[segue identifier] isEqualToString:@"showDropboxBrowser"]) {
+        [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"ui_action" action:@"ui_button" label:@"Dropbox" value:nil] build]];
         // Get reference to the destination view controller
         UINavigationController *navigationController = [segue destinationViewController];
         
@@ -127,6 +119,7 @@
         dropboxBrowser.rootViewDelegate = self;
     }
     if ([[segue identifier] isEqualToString:@"showFacebookBrowser"]) {
+        [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"ui_action" action:@"ui_button" label:@"Facebook" value:nil] build]];
         UINavigationController* navC = [segue destinationViewController];
         
         FacebookAlbumViewController* facebookVC = (FacebookAlbumViewController*) navC.topViewController;
@@ -188,7 +181,7 @@
 
 - (void)dropboxBrowser:(DropboxBrowserViewController *)browser deliveredFileDownloadNotification:(UILocalNotification *)notification
 {
-
+    
 }
 
 @end
