@@ -126,7 +126,23 @@
         // Set the delegate property to recieve delegate method calls
         dropboxBrowser.rootViewDelegate = self;
     }
+    if ([[segue identifier] isEqualToString:@"showFacebookBrowser"]) {
+        UINavigationController* navC = [segue destinationViewController];
+        
+        FacebookAlbumViewController* facebookVC = (FacebookAlbumViewController*) navC.topViewController;
+        facebookVC.delegate = self;
+    }
 }
+
+#pragma mark - Facebook Browser Delegate
+
+-(void)faceBookViewController:(id)controller didSelectPhoto:(UIImage *)image
+{
+    _image = image;
+    [self performSegueWithIdentifier:@"ViewControllerSegue" sender:self];
+}
+
+#pragma mark - Dropbox Browser Delegate
 
 - (void)dropboxBrowser:(DropboxBrowserViewController *)browser didDownloadFile:(NSString *)fileName didOverwriteFile:(BOOL)isLocalFileOverwritten
 {
