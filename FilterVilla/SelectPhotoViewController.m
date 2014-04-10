@@ -139,7 +139,9 @@
 -(void)faceBookViewController:(id)controller didSelectPhoto:(UIImage *)image
 {
     _image = image;
-    [self performSegueWithIdentifier:@"ViewControllerSegue" sender:self];
+    [self dismissViewControllerAnimated:YES completion:^{
+        [self performSegueWithIdentifier:@"ViewControllerSegue" sender:self];
+    }];
 }
 
 #pragma mark - Dropbox Browser Delegate
