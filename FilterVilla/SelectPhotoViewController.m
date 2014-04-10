@@ -128,7 +128,8 @@
     }
 }
 
-- (void)dropboxBrowser:(DropboxBrowserViewController *)browser didDownloadFile:(NSString *)fileName didOverwriteFile:(BOOL)isLocalFileOverwritten {
+- (void)dropboxBrowser:(DropboxBrowserViewController *)browser didDownloadFile:(NSString *)fileName didOverwriteFile:(BOOL)isLocalFileOverwritten
+{
     if (isLocalFileOverwritten == YES) {
         NSLog(@"Downloaded %@ by overwriting local file", fileName);
     } else {
@@ -143,12 +144,13 @@
     }];
 }
 
-- (void)dropboxBrowser:(DropboxBrowserViewController *)browser didFailToDownloadFile:(NSString *)fileName {
+- (void)dropboxBrowser:(DropboxBrowserViewController *)browser didFailToDownloadFile:(NSString *)fileName
+{
     NSLog(@"Failed to download %@", fileName);
 }
 
-- (void)dropboxBrowser:(DropboxBrowserViewController *)browser fileConflictWithLocalFile:(NSURL *)localFileURL withDropboxFile:(DBMetadata *)dropboxFile withError:(NSError *)error {
-
+- (void)dropboxBrowser:(DropboxBrowserViewController *)browser fileConflictWithLocalFile:(NSURL *)localFileURL withDropboxFile:(DBMetadata *)dropboxFile withError:(NSError *)error
+{
     NSData* imageData = [NSData dataWithContentsOfURL:localFileURL];
     UIImage* img = [UIImage imageWithData:imageData];
     _image = img;
@@ -158,14 +160,17 @@
     NSLog(@"File conflict between %@ and %@\n%@ last modified on %@\nError: %@", localFileURL.lastPathComponent, dropboxFile.filename, dropboxFile.filename, dropboxFile.lastModifiedDate, error);
 }
 
-- (void)dropboxBrowserDismissed:(DropboxBrowserViewController *)browser {
+- (void)dropboxBrowserDismissed:(DropboxBrowserViewController *)browser
+{
     // This method is called after Dropbox Browser is dismissed. Do NOT dismiss DropboxBrowser from this method
     // Perform any UI updates here to display any new data from Dropbox Browser
     // ex. Update a UITableView that shows downloaded files or get the name of the most recently selected file:
     //     NSString *fileName = [DropboxBrowserViewController fileName];
 }
 
-- (void)dropboxBrowser:(DropboxBrowserViewController *)browser deliveredFileDownloadNotification:(UILocalNotification *)notification {
+- (void)dropboxBrowser:(DropboxBrowserViewController *)browser deliveredFileDownloadNotification:(UILocalNotification *)notification
+{
+
 }
 
 @end

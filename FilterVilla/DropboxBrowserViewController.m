@@ -149,7 +149,7 @@ static NSString *currentFileName = nil;
     // Add a refresh control, pull down to refresh
     if ([UIRefreshControl class]) {
         UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
-        refreshControl.tintColor = [UIColor colorWithRed:0.0/255.0f green:122.0/255.0f blue:255.0/255.0f alpha:1.0f];
+        refreshControl.tintColor = [UIColor colorWithRed:255.0/255.0f green:0.0/255.0f blue:0.0/255.0f alpha:1.0f];
         [refreshControl addTarget:self action:@selector(updateContent) forControlEvents:UIControlEventValueChanged];
         self.refreshControl = refreshControl;
     }
