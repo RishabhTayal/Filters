@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		060401EF18FDB5D500AC82AA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 060401EE18FDB5D500AC82AA /* libsqlite3.dylib */; };
+		060401F718FDC47200AC82AA /* FilterInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 060401F618FDC47200AC82AA /* FilterInitializer.m */; };
 		060B129C18F5D45200FB4FB9 /* DropboxBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 060B129B18F5D45200FB4FB9 /* DropboxBrowserViewController.m */; };
 		060B129E18F5D49F00FB4FB9 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060B129D18F5D49F00FB4FB9 /* DropboxSDK.framework */; };
 		060B139D18F5E5E000FB4FB9 /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 060B134918F5E5E000FB4FB9 /* folder.png */; };
@@ -112,7 +113,7 @@
 		06A9332F18EB21E40043CA56 /* border.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A9331A18EB21E40043CA56 /* border.png */; };
 		06A9333018EB21E40043CA56 /* border@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A9331B18EB21E40043CA56 /* border@2x.png */; };
 		06A9333118EB21E40043CA56 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06A9331C18EB21E40043CA56 /* InfoPlist.strings */; };
-		06A9333218EB21E40043CA56 /* FilterClassToName.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9331F18EB21E40043CA56 /* FilterClassToName.m */; };
+		06A9333218EB21E40043CA56 /* FilterClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9331F18EB21E40043CA56 /* FilterClass.m */; };
 		06A9333418EB21E40043CA56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06A9332218EB21E40043CA56 /* Images.xcassets */; };
 		06A9333518EB21E40043CA56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9332318EB21E40043CA56 /* main.m */; };
 		06A9333618EB21E40043CA56 /* SelectPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9332518EB21E40043CA56 /* SelectPhotoViewController.m */; };
@@ -134,6 +135,8 @@
 
 /* Begin PBXFileReference section */
 		060401EE18FDB5D500AC82AA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		060401F518FDC47200AC82AA /* FilterInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterInitializer.h; sourceTree = "<group>"; };
+		060401F618FDC47200AC82AA /* FilterInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterInitializer.m; sourceTree = "<group>"; };
 		060B129A18F5D45200FB4FB9 /* DropboxBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropboxBrowserViewController.h; sourceTree = "<group>"; };
 		060B129B18F5D45200FB4FB9 /* DropboxBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropboxBrowserViewController.m; sourceTree = "<group>"; };
 		060B129D18F5D49F00FB4FB9 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
@@ -244,8 +247,8 @@
 		06A9331A18EB21E40043CA56 /* border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = border.png; sourceTree = "<group>"; };
 		06A9331B18EB21E40043CA56 /* border@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "border@2x.png"; sourceTree = "<group>"; };
 		06A9331D18EB21E40043CA56 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		06A9331E18EB21E40043CA56 /* FilterClassToName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterClassToName.h; sourceTree = "<group>"; };
-		06A9331F18EB21E40043CA56 /* FilterClassToName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterClassToName.m; sourceTree = "<group>"; };
+		06A9331E18EB21E40043CA56 /* FilterClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterClass.h; sourceTree = "<group>"; };
+		06A9331F18EB21E40043CA56 /* FilterClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterClass.m; sourceTree = "<group>"; };
 		06A9332018EB21E40043CA56 /* FilterVilla-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FilterVilla-Info.plist"; sourceTree = "<group>"; };
 		06A9332118EB21E40043CA56 /* FilterVilla-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FilterVilla-Prefix.pch"; sourceTree = "<group>"; };
 		06A9332218EB21E40043CA56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -385,8 +388,10 @@
 		060B13F118F5E63A00FB4FB9 /* Filter Helper */ = {
 			isa = PBXGroup;
 			children = (
-				06A9331E18EB21E40043CA56 /* FilterClassToName.h */,
-				06A9331F18EB21E40043CA56 /* FilterClassToName.m */,
+				06A9331E18EB21E40043CA56 /* FilterClass.h */,
+				06A9331F18EB21E40043CA56 /* FilterClass.m */,
+				060401F518FDC47200AC82AA /* FilterInitializer.h */,
+				060401F618FDC47200AC82AA /* FilterInitializer.m */,
 			);
 			name = "Filter Helper";
 			sourceTree = "<group>";
@@ -475,9 +480,6 @@
 				060B13F218F5E64C00FB4FB9 /* UIImage Category */,
 				060B143B18F6FFD600FB4FB9 /* Facebook View Controllers */,
 				060B143C18F6FFE800FB4FB9 /* Dropbox View Controller */,
-				06A9331618EB21E40043CA56 /* AppDelegate.h */,
-				06A9331718EB21E40043CA56 /* AppDelegate.m */,
-				06A9331818EB21E40043CA56 /* Main.storyboard */,
 				06A9332418EB21E40043CA56 /* SelectPhotoViewController.h */,
 				06A9332518EB21E40043CA56 /* SelectPhotoViewController.m */,
 				06A9332B18EB21E40043CA56 /* ViewController.h */,
@@ -491,6 +493,9 @@
 		06A9333A18EB23380043CA56 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				06A9331618EB21E40043CA56 /* AppDelegate.h */,
+				06A9331718EB21E40043CA56 /* AppDelegate.m */,
+				06A9331818EB21E40043CA56 /* Main.storyboard */,
 				060B134818F5E5E000FB4FB9 /* Graphics */,
 				06A9332118EB21E40043CA56 /* FilterVilla-Prefix.pch */,
 				06A9332018EB21E40043CA56 /* FilterVilla-Info.plist */,
@@ -729,9 +734,10 @@
 				060B144118F7019300FB4FB9 /* FacebookPhotoViewController.m in Sources */,
 				060B143A18F6FFCF00FB4FB9 /* FacebookAlbumViewController.m in Sources */,
 				06A9333518EB21E40043CA56 /* main.m in Sources */,
-				06A9333218EB21E40043CA56 /* FilterClassToName.m in Sources */,
+				06A9333218EB21E40043CA56 /* FilterClass.m in Sources */,
 				06A9332D18EB21E40043CA56 /* AppDelegate.m in Sources */,
 				0633A94518F72776005BEFED /* FacebookAlbumTableViewCell.m in Sources */,
+				060401F718FDC47200AC82AA /* FilterInitializer.m in Sources */,
 				06A9333818EB21E40043CA56 /* UIImage+FiltersImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,13 +7,18 @@
 //
 
 #import "ViewController.h"
-#import "FilterClassToName.h"
+//#import "FilterClassToName.h"
 #import "SwipeView.h"
 #import "UIImage+FiltersImage.h"
+#import "FilterInitializer.h"
+#import "FilterClass.h"
 
 @interface ViewController ()
 
 @property (nonatomic, strong) NSArray* filters;
+
+@property (nonatomic, strong) IBOutlet UIImageView* mainImageView;
+@property (nonatomic, strong) IBOutlet SwipeView* filtersCollectionView;
 
 @end
 
@@ -22,22 +27,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    _filters = @[@"Original",
-                 @"CILinearToSRGBToneCurve",
-                 @"CIPhotoEffectChrome",
-                 @"CIPhotoEffectFade",
-                 @"CIPhotoEffectInstant",
-                 @"CIPhotoEffectMono",
-                 @"CIPhotoEffectNoir",
-                 @"CIPhotoEffectProcess",
-                 @"CIPhotoEffectTonal",
-                 @"CIPhotoEffectTransfer",
-                 @"CISRGBToneCurveToLinear",
-                 @"CIVignetteEffect",
-                 @"CIBloom",
-                 @"CIGaussianBlur"
-                 ];
+
+    _filters = [FilterInitializer filtersInitialize];
+//    _filters = @[@"Original",
+//                 @"CIColorPosterize",
+//                 @"CILinearToSRGBToneCurve",
+//                 @"CIPhotoEffectChrome",
+//                 @"CIPhotoEffectFade",
+//                 @"CIPhotoEffectInstant",
+//                 @"CIPhotoEffectMono",
+//                 @"CIPhotoEffectNoir",
+//                 @"CIPhotoEffectProcess",
+//                 @"CIPhotoEffectTonal",
+//                 @"CIPhotoEffectTransfer",
+//                 @"CISRGBToneCurveToLinear",
+//                 @"CIVignetteEffect",
+//                 @"CIBloom",
+//                 @"CIGaussianBlur",
+//                 ];
     
     _mainImageView.image = _orgImage;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveImage:)];
@@ -120,7 +127,10 @@
     }else {
         iv.image = [self applyFilter:_filters[index] toImage:img];
     }
-    label.text = [FilterClassToName filterNameFromClass:[_filters objectAtIndex:index]];
+//    label.text = [FilterClassToName filterNameFromClass:[_filters objectAtIndex:index]];
+    
+    label.text = ((FilterClass*)_filters[index]).filterName;
+    
     return view;
 }
 
@@ -138,13 +148,18 @@
     self.mainImageView.image = [self applyFilter:_filters[index] toImage:img];
 }
 
--(UIImage*)applyFilter:(NSString*)filterName toImage:(UIImage*)image
+#pragma mark -
+
+-(UIImage*)applyFilter:(FilterClass*)filterObj toImage:(UIImage*)image
 {
+    NSString* filterName = filterObj.className;
     CIImage *ciImage = [[CIImage alloc] initWithImage:image];
-    CIFilter *filter = [CIFilter filterWithName:filterName
-                                  keysAndValues:kCIInputImageKey, ciImage, nil];
+    CIFilter *filter = [CIFilter filterWithName:filterName];
+
     [filter setDefaults];
-    
+
+    [filter setValue:ciImage forKey:kCIInputImageKey];
+
     CIContext *context = [CIContext contextWithOptions:nil];
     CIImage *outputImage = [filter outputImage];
     CGImageRef cgImage = [context createCGImage:outputImage
@@ -155,48 +170,5 @@
     
     return returnImage;
 }
-
-#pragma mark -
-
-//-(IBAction)loadPhotosClicked:(id)sender
-//{
-//    UIActionSheet* actionSheet = [[UIActionSheet alloc] initWithTitle:@"Import Photo" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Library", @"Camera", @"Facebook", nil];
-//    [actionSheet showInView:self.view];
-//}
-//
-//#pragma mark - UIActionSheet Delegate
-//
-//-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
-//{
-//    NSLog(@"%d", buttonIndex);
-//    if (buttonIndex == 0) {
-//        UIImagePickerController* imagePicker = [[UIImagePickerController alloc] init];
-//        [imagePicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
-//        imagePicker.delegate = self;
-//        [self presentViewController:imagePicker animated:YES completion:nil];
-//    }
-//    if (buttonIndex == 1) {
-//        UIImagePickerController* imagePicker = [[UIImagePickerController alloc] init];
-//        [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
-//        imagePicker.delegate = self;
-//        [self presentViewController:imagePicker animated:YES completion:nil];
-//    }
-//}
-//
-//#pragma mark - UIImagePickerController Delegate
-//
-//-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-//{
-//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveImage:)];
-//    
-//    _mainImageView.image = info[UIImagePickerControllerOriginalImage];
-//    _orgImage = _mainImageView.image;
-//    [self dismissViewControllerAnimated:YES completion:nil];
-//}
-//
-//-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
-//{
-//    [self dismissViewControllerAnimated:YES completion:nil];
-//}
 
 @end
