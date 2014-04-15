@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-GoogleAnalytics-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SwipeView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5912D0C1CA57449793E1B0C6</key>
+		<key>014EAE74887C4EC0970092D8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>65DE9A5FE0A94B5AA38FE677</key>
+		<key>35E3EC6DD14E485B93E14D18</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A2D755128E8547B5A9488388</key>
+		<key>555FE08E14794AECB3E44280</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D01C6955F4C3482DB11A477F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -234,12 +234,6 @@
 		0633A94218F72776005BEFED /* FacebookAlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookAlbumTableViewCell.h; sourceTree = "<group>"; };
 		0633A94318F72776005BEFED /* FacebookAlbumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookAlbumTableViewCell.m; sourceTree = "<group>"; };
 		0633A94418F72776005BEFED /* FacebookAlbumTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacebookAlbumTableViewCell.xib; sourceTree = "<group>"; };
-		0633A94918F72B99005BEFED /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
-		0633A94A18F72B99005BEFED /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
-		0633A94B18F72B99005BEFED /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
-		0633A94C18F72B99005BEFED /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
-		0633A94D18F72B99005BEFED /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
-		0633A94E18F72B99005BEFED /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
 		0633A94F18F72C10005BEFED /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		0633A95118F72D23005BEFED /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0633A95318F72D30005BEFED /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -448,20 +442,6 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
-		0633A94818F72B99005BEFED /* GA Library */ = {
-			isa = PBXGroup;
-			children = (
-				0633A94918F72B99005BEFED /* GAI.h */,
-				0633A94A18F72B99005BEFED /* GAIDictionaryBuilder.h */,
-				0633A94B18F72B99005BEFED /* GAIFields.h */,
-				0633A94C18F72B99005BEFED /* GAILogger.h */,
-				0633A94D18F72B99005BEFED /* GAITrackedViewController.h */,
-				0633A94E18F72B99005BEFED /* GAITracker.h */,
-			);
-			name = "GA Library";
-			path = Library;
-			sourceTree = "<group>";
-		};
 		06A9329E18E9EE390043CA56 = {
 			isa = PBXGroup;
 			children = (
@@ -523,7 +503,6 @@
 		06A9331518EB21E40043CA56 /* FilterVilla */ = {
 			isa = PBXGroup;
 			children = (
-				0633A94818F72B99005BEFED /* GA Library */,
 				060B13F118F5E63A00FB4FB9 /* Filter Helper */,
 				060B13F218F5E64C00FB4FB9 /* UIImage Category */,
 				060B143B18F6FFD600FB4FB9 /* Facebook View Controllers */,
