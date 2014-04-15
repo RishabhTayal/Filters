@@ -106,8 +106,6 @@
 		06A932AB18E9EE390043CA56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AA18E9EE390043CA56 /* Foundation.framework */; };
 		06A932AD18E9EE390043CA56 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AC18E9EE390043CA56 /* CoreGraphics.framework */; };
 		06A932AF18E9EE390043CA56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AE18E9EE390043CA56 /* UIKit.framework */; };
-		06A932CB18E9EE390043CA56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AA18E9EE390043CA56 /* Foundation.framework */; };
-		06A932CC18E9EE390043CA56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AE18E9EE390043CA56 /* UIKit.framework */; };
 		06A9332D18EB21E40043CA56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9331718EB21E40043CA56 /* AppDelegate.m */; };
 		06A9332F18EB21E40043CA56 /* border.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A9331A18EB21E40043CA56 /* border.png */; };
 		06A9333018EB21E40043CA56 /* border@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A9331B18EB21E40043CA56 /* border@2x.png */; };
@@ -121,16 +119,6 @@
 		06A9333B18EB3D950043CA56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A9331818EB21E40043CA56 /* Main.storyboard */; };
 		CEA29CAD22DD4F778218FE03 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF18DA1D15C4E919EA237E3 /* libPods.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		06A932CD18E9EE390043CA56 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 06A9329F18E9EE390043CA56 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 06A932A618E9EE390043CA56;
-			remoteInfo = Filters;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		060401EE18FDB5D500AC82AA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -237,7 +225,6 @@
 		06A932AA18E9EE390043CA56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		06A932AC18E9EE390043CA56 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		06A932AE18E9EE390043CA56 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		06A932C818E9EE390043CA56 /* FilterVillaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilterVillaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A9331618EB21E40043CA56 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06A9331718EB21E40043CA56 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		06A9331918EB21E40043CA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -276,15 +263,6 @@
 				06A932AB18E9EE390043CA56 /* Foundation.framework in Frameworks */,
 				060B143E18F7006F00FB4FB9 /* FacebookSDK.framework in Frameworks */,
 				CEA29CAD22DD4F778218FE03 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		06A932C518E9EE390043CA56 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				06A932CC18E9EE390043CA56 /* UIKit.framework in Frameworks */,
-				06A932CB18E9EE390043CA56 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +423,6 @@
 			isa = PBXGroup;
 			children = (
 				06A932A718E9EE390043CA56 /* FilterVilla.app */,
-				06A932C818E9EE390043CA56 /* FilterVillaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -524,24 +501,6 @@
 			productReference = 06A932A718E9EE390043CA56 /* FilterVilla.app */;
 			productType = "com.apple.product-type.application";
 		};
-		06A932C718E9EE390043CA56 /* FilterVillaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 06A932DC18E9EE390043CA56 /* Build configuration list for PBXNativeTarget "FilterVillaTests" */;
-			buildPhases = (
-				06A932C418E9EE390043CA56 /* Sources */,
-				06A932C518E9EE390043CA56 /* Frameworks */,
-				06A932C618E9EE390043CA56 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				06A932CE18E9EE390043CA56 /* PBXTargetDependency */,
-			);
-			name = FilterVillaTests;
-			productName = FiltersTests;
-			productReference = 06A932C818E9EE390043CA56 /* FilterVillaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -553,9 +512,6 @@
 				TargetAttributes = {
 					06A932A618E9EE390043CA56 = {
 						DevelopmentTeam = GJ7VFS8326;
-					};
-					06A932C718E9EE390043CA56 = {
-						TestTargetID = 06A932A618E9EE390043CA56;
 					};
 				};
 			};
@@ -573,7 +529,6 @@
 			projectRoot = "";
 			targets = (
 				06A932A618E9EE390043CA56 /* FilterVilla */,
-				06A932C718E9EE390043CA56 /* FilterVillaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -676,13 +631,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		06A932C618E9EE390043CA56 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -736,22 +684,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		06A932C418E9EE390043CA56 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		06A932CE18E9EE390043CA56 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 06A932A618E9EE390043CA56 /* FilterVilla */;
-			targetProxy = 06A932CD18E9EE390043CA56 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		06A9331818EB21E40043CA56 /* Main.storyboard */ = {
@@ -893,46 +826,6 @@
 			};
 			name = Release;
 		};
-		06A932DD18E9EE390043CA56 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Filters.app/Filters";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Filters/Filters-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "FiltersTests/FilterVillaTests-Info.plist";
-				PRODUCT_NAME = FilterVillaTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		06A932DE18E9EE390043CA56 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Filters.app/Filters";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Filters/Filters-Prefix.pch";
-				INFOPLIST_FILE = "FiltersTests/FilterVillaTests-Info.plist";
-				PRODUCT_NAME = FilterVillaTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -950,15 +843,6 @@
 			buildConfigurations = (
 				06A932DA18E9EE390043CA56 /* Debug */,
 				06A932DB18E9EE390043CA56 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		06A932DC18E9EE390043CA56 /* Build configuration list for PBXNativeTarget "FilterVillaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				06A932DD18E9EE390043CA56 /* Debug */,
-				06A932DE18E9EE390043CA56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
