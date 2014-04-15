@@ -13,29 +13,36 @@
 +(NSArray *)filterInitialize
 {
     NSMutableArray* array = [[NSMutableArray alloc] init];
-    //                 @"",
-    //                 @"CIPhotoEffectFade",
-    //                 @"CIPhotoEffectInstant",
-    //                 @"CIPhotoEffectMono",
-    //                 @"CIPhotoEffectNoir",
-    //                 @"CIPhotoEffectProcess",
-    //                 @"CIPhotoEffectTonal",
-    //                 @"CIPhotoEffectTransfer",
-    //                 @"CISRGBToneCurveToLinear",
-    //                 @"CIVignetteEffect",
-    //                 @"CIBloom",
-    //                 @"CIGaussianBlur",
-    //                 ];
-    //    FilterClass* filter = [FilterClass filterWithClassName:@"" filterName:@"Original" filterParameter:@""];
-    //    [array addObject:filter];
-    //    filter = [FilterClass filterWithClassName:@"CIColorPosterize" filterName:@"Poster" filterParameter:@"inputLevels"];
-    //    [array addObject:filter];
-    //    filter = [FilterClass filterWithClassName:@"CILinearToSRGBToneCurve" filterName:@"Tone Curve" filterParameter:@""];
-    //    [array addObject:filter];
-    //    filter = [FilterClass filterWithClassName:@"CIPhotoEffectChrome" filterName:@"Chrome" filterParameter:@""];
-    //    [array addObject:filter];
-    //    filter = [FilterClass filterWithClassName:@"CIVignetteEffect" filterName:@"Vignette" filterParameter:@"inputRadius"];
-    //    [array addObject:filter];
+    FilterClass* filter = [FilterClass filterWithClassName:@"" filterName:@"Original" filterParameter:@""];
+    [array addObject:filter];   
+    filter = [FilterClass filterWithClassName:@"CIColorPosterize" filterName:@"Poster" filterParameter:@"inputLevels"];
+    [array addObject:filter];
+    filter = [FilterClass filterWithClassName:@"CILinearToSRGBToneCurve" filterName:@"Tone Curve" filterParameter:@""];
+    [array addObject:filter];
+    filter = [FilterClass filterWithClassName:@"CIPhotoEffectChrome" filterName:@"Chrome" filterParameter:@""];
+    [array addObject:filter];
+    filter = [FilterClass filterWithClassName:@"CIVignetteEffect" filterName:@"Vignette" filterParameter:@"inputRadius"];
+    [array addObject:filter];
+    filter = [FilterClass filterWithClassName:@"CIPhotoEffectFade" filterName:@"Fade" filterParameter:@""];
+    [array addObject:filter];
+    filter = [FilterClass filterWithClassName:@"CIPhotoEffectInstant" filterName:@"Instant" filterParameter:@""];
+    [array addObject:filter];
+    filter = [FilterClass filterWithClassName:@"CIPhotoEffectMono" filterName:@"Mono" filterParameter:@""];
+    [array addObject:filter];
+    filter = [FilterClass filterWithClassName:@"CIPhotoEffectNoir" filterName:@"Noir" filterParameter:@""];
+    [array addObject:filter];
+    filter = [FilterClass filterWithClassName:@"CIPhotoEffectProcess" filterName:@"Process" filterParameter:@""];
+    [array addObject:filter];
+    filter = [FilterClass filterWithClassName:@"CIPhotoEffectTonal" filterName:@"Tonal" filterParameter:@""];
+    [array addObject:filter];
+    filter = [FilterClass filterWithClassName:@"CIPhotoEffectTransfer" filterName:@"Transfer" filterParameter:@""];
+    [array addObject:filter];
+    filter = [FilterClass filterWithClassName:@"CISRGBToneCurveToLinear" filterName:@"Linear" filterParameter:@""];
+    [array addObject:filter];
+    filter = [FilterClass filterWithClassName:@"CIBloom" filterName:@"Bloom" filterParameter:@""];
+    [array addObject:filter];
+    filter = [FilterClass filterWithClassName:@"CIGaussianBlur" filterName:@"Gaussian Blur" filterParameter:@""];
+    [array addObject:filter];
     return array;
 }
 
@@ -49,51 +56,5 @@
     }
     return filter;
 }
-//+(NSString *)filterNameFromClass:(NSString *)className
-//{
-//    if ([className isEqualToString:@"CILinearToSRGBToneCurve"]) {
-//        return @"Tone";
-//    }
-//    if ([className isEqualToString:@"CIPhotoEffectChrome"]) {
-//        return @"Chrome";
-//    }
-//    if ([className isEqualToString:@"CIPhotoEffectFade"]) {
-//        return @"Fade";
-//    }
-//    if ([className isEqualToString:@"CIPhotoEffectInstant"]) {
-//        return @"Instant";
-//    }
-//    if ([className isEqualToString:@"CIPhotoEffectMono"]) {
-//        return @"Mono";
-//    }
-//    if ([className isEqualToString:@"CIPhotoEffectNoir"]) {
-//        return @"Noir";
-//    }
-//    if ([className isEqualToString:@"CIPhotoEffectProcess"]) {
-//        return @"Process";
-//    }
-//    if ([className isEqualToString:@"CIPhotoEffectTonal"]) {
-//        return @"Tonal";
-//    }
-//    if ([className isEqualToString:@"CIPhotoEffectTransfer"]) {
-//        return @"Transfer";
-//    }
-//    if ([className isEqualToString:@"CISRGBToneCurveToLinear"]) {
-//        return @"Linear";
-//    }
-//    if ([className isEqualToString:@"CIVignetteEffect"]) {
-//        return @"Vignette";
-//    }
-//    if ([className isEqualToString:@"CIBloom"]) {
-//        return @"Bloom";
-//    }
-//    if ([className isEqualToString:@"CIGaussianBlur"]) {
-//        return @"Blur";
-//    }
-//    if ([className isEqualToString:@"CIColorPosterize"]) {
-//        return @"Poster";
-//    }
-//    return @"Original";
-//}
 
 @end

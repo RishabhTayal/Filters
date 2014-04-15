@@ -15,6 +15,7 @@
 @interface ViewController ()
 
 @property (nonatomic, strong) NSArray* filters;
+@property (strong) NSMutableArray* thumbnailArray;
 
 @property (nonatomic, strong) IBOutlet UIImageView* mainImageView;
 @property (nonatomic, strong) IBOutlet SwipeView* filtersCollectionView;
@@ -26,28 +27,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    _filters = [FilterClass filterInitialize];
-//    _filters = @[@"Original",
-//                 @"CIColorPosterize",
-//                 @"CILinearToSRGBToneCurve",
-//                 @"CIPhotoEffectChrome",
-//                 @"CIPhotoEffectFade",
-//                 @"CIPhotoEffectInstant",
-//                 @"CIPhotoEffectMono",
-//                 @"CIPhotoEffectNoir",
-//                 @"CIPhotoEffectProcess",
-//                 @"CIPhotoEffectTonal",
-//                 @"CIPhotoEffectTransfer",
-//                 @"CISRGBToneCurveToLinear",
-//                 @"CIVignetteEffect",
-//                 @"CIBloom",
-//                 @"CIGaussianBlur",
-//                 ];
     
+    _filters = [FilterClass filterInitialize];
+    _thumbnailArray = [NSMutableArray new];
     _mainImageView.image = _orgImage;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveImage:)];
-
+    
     _filtersCollectionView.pagingEnabled = NO;
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -91,7 +76,7 @@
     if (view == nil) {
         view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, swipeView.bounds.size.height, swipeView.bounds.size.height)];
         view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-
+        
         CGRect frame = view.frame;
         int offset = 5;
         iv = [[UIImageView alloc] initWithFrame:CGRectMake(frame.origin.x + offset, frame.origin.y + offset, frame.size.height - offset - offset, frame.size.height - offset - offset)];
@@ -107,7 +92,7 @@
         [view addSubview:borderIV];
         
         label = [[UILabel alloc] initWithFrame:CGRectMake(0, view.frame.size.height - 40, view.frame.size.width, 40)];
-//        label.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        //        label.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         label.textAlignment = NSTextAlignmentCenter;
         label.textColor = [UIColor whiteColor];
         label.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.6];
@@ -120,13 +105,17 @@
         label = (UILabel*)[view viewWithTag:2];
     }
     
-    UIImage* img = [UIImage scaleAndRotateImage:_orgImage scale:iv.frame.size];
-    if (index == 0) {
-        iv.image = img;
-    }else {
-        iv.image = [self applyFilter:_filters[index] toImage:img];
+    if (_thumbnailArray.count > index) {
+        iv.image = _thumbnailArray[index];
+    } else{
+        UIImage* img = [UIImage scaleAndRotateImage:_orgImage scale:iv.frame.size];
+        if (index == 0) {
+            iv.image = img;
+        }else {
+            iv.image = [self applyFilter:_filters[index] toImage:img];
+        }
+        [_thumbnailArray addObject:iv.image];
     }
-//    label.text = [FilterClassToName filterNameFromClass:[_filters objectAtIndex:index]];
     
     label.text = ((FilterClass*)_filters[index]).filterName;
     
@@ -154,11 +143,11 @@
     NSString* filterName = filterObj.className;
     CIImage *ciImage = [[CIImage alloc] initWithImage:image];
     CIFilter *filter = [CIFilter filterWithName:filterName];
-
+    
     [filter setDefaults];
-
+    
     [filter setValue:ciImage forKey:kCIInputImageKey];
-
+    
     CIContext *context = [CIContext contextWithOptions:nil];
     CIImage *outputImage = [filter outputImage];
     CGImageRef cgImage = [context createCGImage:outputImage
