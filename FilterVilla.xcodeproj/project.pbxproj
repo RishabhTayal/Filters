@@ -100,18 +100,14 @@
 		060B144118F7019300FB4FB9 /* FacebookPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 060B144018F7019300FB4FB9 /* FacebookPhotoViewController.m */; };
 		0633A94518F72776005BEFED /* FacebookAlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0633A94318F72776005BEFED /* FacebookAlbumTableViewCell.m */; };
 		0633A94618F72776005BEFED /* FacebookAlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0633A94418F72776005BEFED /* FacebookAlbumTableViewCell.xib */; };
-		0633A95018F72C10005BEFED /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0633A94F18F72C10005BEFED /* libGoogleAnalyticsServices.a */; };
 		0633A95218F72D23005BEFED /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0633A95118F72D23005BEFED /* SystemConfiguration.framework */; };
 		0633A95418F72D30005BEFED /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0633A95318F72D30005BEFED /* CoreData.framework */; };
 		0633A95618F72D3F005BEFED /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0633A95518F72D3F005BEFED /* libz.dylib */; };
 		06A932AB18E9EE390043CA56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AA18E9EE390043CA56 /* Foundation.framework */; };
 		06A932AD18E9EE390043CA56 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AC18E9EE390043CA56 /* CoreGraphics.framework */; };
 		06A932AF18E9EE390043CA56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AE18E9EE390043CA56 /* UIKit.framework */; };
-		06A932CA18E9EE390043CA56 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932C918E9EE390043CA56 /* XCTest.framework */; };
 		06A932CB18E9EE390043CA56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AA18E9EE390043CA56 /* Foundation.framework */; };
 		06A932CC18E9EE390043CA56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A932AE18E9EE390043CA56 /* UIKit.framework */; };
-		06A932D418E9EE390043CA56 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06A932D218E9EE390043CA56 /* InfoPlist.strings */; };
-		06A932D618E9EE390043CA56 /* FiltersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A932D518E9EE390043CA56 /* FiltersTests.m */; };
 		06A9332D18EB21E40043CA56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9331718EB21E40043CA56 /* AppDelegate.m */; };
 		06A9332F18EB21E40043CA56 /* border.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A9331A18EB21E40043CA56 /* border.png */; };
 		06A9333018EB21E40043CA56 /* border@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A9331B18EB21E40043CA56 /* border@2x.png */; };
@@ -234,7 +230,6 @@
 		0633A94218F72776005BEFED /* FacebookAlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookAlbumTableViewCell.h; sourceTree = "<group>"; };
 		0633A94318F72776005BEFED /* FacebookAlbumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookAlbumTableViewCell.m; sourceTree = "<group>"; };
 		0633A94418F72776005BEFED /* FacebookAlbumTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacebookAlbumTableViewCell.xib; sourceTree = "<group>"; };
-		0633A94F18F72C10005BEFED /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		0633A95118F72D23005BEFED /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0633A95318F72D30005BEFED /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0633A95518F72D3F005BEFED /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -243,10 +238,6 @@
 		06A932AC18E9EE390043CA56 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		06A932AE18E9EE390043CA56 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		06A932C818E9EE390043CA56 /* FilterVillaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilterVillaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		06A932C918E9EE390043CA56 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		06A932D118E9EE390043CA56 /* FilterVillaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FilterVillaTests-Info.plist"; sourceTree = "<group>"; };
-		06A932D318E9EE390043CA56 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		06A932D518E9EE390043CA56 /* FiltersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiltersTests.m; sourceTree = "<group>"; };
 		06A9331618EB21E40043CA56 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06A9331718EB21E40043CA56 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		06A9331918EB21E40043CA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -281,7 +272,6 @@
 				060B13F418F5F17300FB4FB9 /* iAd.framework in Frameworks */,
 				060B129E18F5D49F00FB4FB9 /* DropboxSDK.framework in Frameworks */,
 				06A932AD18E9EE390043CA56 /* CoreGraphics.framework in Frameworks */,
-				0633A95018F72C10005BEFED /* libGoogleAnalyticsServices.a in Frameworks */,
 				06A932AF18E9EE390043CA56 /* UIKit.framework in Frameworks */,
 				06A932AB18E9EE390043CA56 /* Foundation.framework in Frameworks */,
 				060B143E18F7006F00FB4FB9 /* FacebookSDK.framework in Frameworks */,
@@ -293,7 +283,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06A932CA18E9EE390043CA56 /* XCTest.framework in Frameworks */,
 				06A932CC18E9EE390043CA56 /* UIKit.framework in Frameworks */,
 				06A932CB18E9EE390043CA56 /* Foundation.framework in Frameworks */,
 			);
@@ -446,7 +435,6 @@
 			isa = PBXGroup;
 			children = (
 				06A9331518EB21E40043CA56 /* FilterVilla */,
-				06A932CF18E9EE390043CA56 /* FiltersTests */,
 				06A932A918E9EE390043CA56 /* Frameworks */,
 				06A932A818E9EE390043CA56 /* Products */,
 				AB9D239AA46B426AB8B73D01 /* Pods.xcconfig */,
@@ -469,35 +457,15 @@
 				0633A95518F72D3F005BEFED /* libz.dylib */,
 				0633A95318F72D30005BEFED /* CoreData.framework */,
 				0633A95118F72D23005BEFED /* SystemConfiguration.framework */,
-				0633A94F18F72C10005BEFED /* libGoogleAnalyticsServices.a */,
 				060B143D18F7006F00FB4FB9 /* FacebookSDK.framework */,
 				060B13F318F5F17200FB4FB9 /* iAd.framework */,
 				060B129D18F5D49F00FB4FB9 /* DropboxSDK.framework */,
 				06A932AA18E9EE390043CA56 /* Foundation.framework */,
 				06A932AC18E9EE390043CA56 /* CoreGraphics.framework */,
 				06A932AE18E9EE390043CA56 /* UIKit.framework */,
-				06A932C918E9EE390043CA56 /* XCTest.framework */,
 				1BF18DA1D15C4E919EA237E3 /* libPods.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		06A932CF18E9EE390043CA56 /* FiltersTests */ = {
-			isa = PBXGroup;
-			children = (
-				06A932D518E9EE390043CA56 /* FiltersTests.m */,
-				06A932D018E9EE390043CA56 /* Supporting Files */,
-			);
-			path = FiltersTests;
-			sourceTree = "<group>";
-		};
-		06A932D018E9EE390043CA56 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				06A932D118E9EE390043CA56 /* FilterVillaTests-Info.plist */,
-				06A932D218E9EE390043CA56 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		06A9331518EB21E40043CA56 /* FilterVilla */ = {
@@ -712,7 +680,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06A932D418E9EE390043CA56 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -773,7 +740,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06A932D618E9EE390043CA56 /* FiltersTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -788,14 +754,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		06A932D218E9EE390043CA56 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				06A932D318E9EE390043CA56 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		06A9331818EB21E40043CA56 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
