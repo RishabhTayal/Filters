@@ -10,6 +10,35 @@
 
 @implementation FilterClass
 
++(NSArray *)filterInitialize
+{
+    NSMutableArray* array = [[NSMutableArray alloc] init];
+    //                 @"",
+    //                 @"CIPhotoEffectFade",
+    //                 @"CIPhotoEffectInstant",
+    //                 @"CIPhotoEffectMono",
+    //                 @"CIPhotoEffectNoir",
+    //                 @"CIPhotoEffectProcess",
+    //                 @"CIPhotoEffectTonal",
+    //                 @"CIPhotoEffectTransfer",
+    //                 @"CISRGBToneCurveToLinear",
+    //                 @"CIVignetteEffect",
+    //                 @"CIBloom",
+    //                 @"CIGaussianBlur",
+    //                 ];
+    //    FilterClass* filter = [FilterClass filterWithClassName:@"" filterName:@"Original" filterParameter:@""];
+    //    [array addObject:filter];
+    //    filter = [FilterClass filterWithClassName:@"CIColorPosterize" filterName:@"Poster" filterParameter:@"inputLevels"];
+    //    [array addObject:filter];
+    //    filter = [FilterClass filterWithClassName:@"CILinearToSRGBToneCurve" filterName:@"Tone Curve" filterParameter:@""];
+    //    [array addObject:filter];
+    //    filter = [FilterClass filterWithClassName:@"CIPhotoEffectChrome" filterName:@"Chrome" filterParameter:@""];
+    //    [array addObject:filter];
+    //    filter = [FilterClass filterWithClassName:@"CIVignetteEffect" filterName:@"Vignette" filterParameter:@"inputRadius"];
+    //    [array addObject:filter];
+    return array;
+}
+
 +(id)filterWithClassName:(NSString *)className filterName:(NSString *)filterName filterParameter:(NSString *)parameter
 {
     FilterClass* filter = [[FilterClass alloc] init];

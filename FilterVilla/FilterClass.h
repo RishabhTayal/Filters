@@ -14,6 +14,8 @@
 @property (strong) NSString* filterName;
 @property (strong) NSString* filterParameter;
 
-+(id)filterWithClassName:(NSString*)className filterName:(NSString*)filterName filterParameter:(NSString*)parameter;
++(NSArray*)filterInitialize;
+
+//+(id)filterWithClassName:(NSString*)className filterName:(NSString*)filterName filterParameter:(NSString*)parameter;
 
 @end

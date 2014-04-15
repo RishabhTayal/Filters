@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		060401EF18FDB5D500AC82AA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 060401EE18FDB5D500AC82AA /* libsqlite3.dylib */; };
-		060401F718FDC47200AC82AA /* FilterInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 060401F618FDC47200AC82AA /* FilterInitializer.m */; };
 		060B129C18F5D45200FB4FB9 /* DropboxBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 060B129B18F5D45200FB4FB9 /* DropboxBrowserViewController.m */; };
 		060B129E18F5D49F00FB4FB9 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060B129D18F5D49F00FB4FB9 /* DropboxSDK.framework */; };
 		060B139D18F5E5E000FB4FB9 /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 060B134918F5E5E000FB4FB9 /* folder.png */; };
@@ -135,8 +134,6 @@
 
 /* Begin PBXFileReference section */
 		060401EE18FDB5D500AC82AA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		060401F518FDC47200AC82AA /* FilterInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterInitializer.h; sourceTree = "<group>"; };
-		060401F618FDC47200AC82AA /* FilterInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterInitializer.m; sourceTree = "<group>"; };
 		060B129A18F5D45200FB4FB9 /* DropboxBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropboxBrowserViewController.h; sourceTree = "<group>"; };
 		060B129B18F5D45200FB4FB9 /* DropboxBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropboxBrowserViewController.m; sourceTree = "<group>"; };
 		060B129D18F5D49F00FB4FB9 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
@@ -390,8 +387,6 @@
 			children = (
 				06A9331E18EB21E40043CA56 /* FilterClass.h */,
 				06A9331F18EB21E40043CA56 /* FilterClass.m */,
-				060401F518FDC47200AC82AA /* FilterInitializer.h */,
-				060401F618FDC47200AC82AA /* FilterInitializer.m */,
 			);
 			name = "Filter Helper";
 			sourceTree = "<group>";
@@ -737,7 +732,6 @@
 				06A9333218EB21E40043CA56 /* FilterClass.m in Sources */,
 				06A9332D18EB21E40043CA56 /* AppDelegate.m in Sources */,
 				0633A94518F72776005BEFED /* FacebookAlbumTableViewCell.m in Sources */,
-				060401F718FDC47200AC82AA /* FilterInitializer.m in Sources */,
 				06A9333818EB21E40043CA56 /* UIImage+FiltersImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

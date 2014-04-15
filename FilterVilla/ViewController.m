@@ -10,7 +10,6 @@
 //#import "FilterClassToName.h"
 #import "SwipeView.h"
 #import "UIImage+FiltersImage.h"
-#import "FilterInitializer.h"
 #import "FilterClass.h"
 
 @interface ViewController ()
@@ -28,7 +27,7 @@
 {
     [super viewDidLoad];
 
-    _filters = [FilterInitializer filtersInitialize];
+    _filters = [FilterClass filterInitialize];
 //    _filters = @[@"Original",
 //                 @"CIColorPosterize",
 //                 @"CILinearToSRGBToneCurve",
