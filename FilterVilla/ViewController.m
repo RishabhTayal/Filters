@@ -11,6 +11,9 @@
 #import "SwipeView.h"
 #import "UIImage+FiltersImage.h"
 #import "FilterClass.h"
+#import <AssetsLibrary/AssetsLibrary.h>
+#import "ALAssetsLibrary+CustomPhotoAlbum.h"
+#import "BDKNotifyHUD.h"
 
 @interface ViewController ()
 
@@ -52,13 +55,22 @@
 -(void)saveImage:(id)sender
 {
     NSLog(@"Save Image To Device");
-    UIImageWriteToSavedPhotosAlbum(_mainImageView.image, self, @selector(photoSaved:didFinishSavingWithError:contextInfo:), nil);
-}
+    NSString* albumName = @"FilterVilla";
+    
+    ALAssetsLibrary* library = [[ALAssetsLibrary alloc] init];
+    
+    [library saveImage:_mainImageView.image toAlbum:albumName withCompletionBlock:^(NSError *error) {
 
--(void)photoSaved:(id)sender didFinishSavingWithError:(NSError*)error contextInfo:(void*)context
-{
-    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Saved" message:@"Image has been saved" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-    [alert show];
+        // Create the HUD object; view can be a UIImageView, an icon... you name it
+        BDKNotifyHUD* hud = [BDKNotifyHUD notifyHUDWithImage:[UIImage imageNamed:@"Checkmark.png"] text:@"Saved"];
+        hud.center = CGPointMake(self.view.center.x, self.view.center.y - 20);
+        
+        // Animate it, then get rid of it. These settings last 1 second, takes a half-second fade.
+        [self.view addSubview:hud];
+        [hud presentWithDuration:1.0f speed:0.5f inView:self.view completion:^{
+            [hud removeFromSuperview];
+        }];
+    }];
 }
 
 #pragma mark - Swipe View Delegates

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-BDKNotifyHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-GoogleAnalytics-iOS-SDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7AD24D0606CF4233B6125C3B</key>
+		<key>196221AC6E6C489DBE7BEF3E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7DBE9F88F5F946979A3A265A</key>
+		<key>3A74CA51434C4A1E899A0ED7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A420E6D1914D470FB9B0D756</key>
+		<key>3F89059855F24D2694C4744C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B635726A549149D98A425934</key>
+		<key>456D1B91A6B6464BB050261C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DFA70A42789E44B0B135B878</key>
+		<key>B3AB6E7364CE4DD48CA9DD8D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D627F89494AB43888D1E3138</key>
 		<dict>
 			<key>primary</key>
 			<true/>

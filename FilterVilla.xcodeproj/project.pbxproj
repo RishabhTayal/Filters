@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		060401EF18FDB5D500AC82AA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 060401EE18FDB5D500AC82AA /* libsqlite3.dylib */; };
+		060401FC18FDE6A300AC82AA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060401FB18FDE6A300AC82AA /* AssetsLibrary.framework */; };
+		060401FF18FDE8B600AC82AA /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 060401FE18FDE8B600AC82AA /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
+		0604020218FDED5E00AC82AA /* Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 0604020018FDED5E00AC82AA /* Checkmark.png */; };
+		0604020318FDED5E00AC82AA /* Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0604020118FDED5E00AC82AA /* Checkmark@2x.png */; };
 		060B129C18F5D45200FB4FB9 /* DropboxBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 060B129B18F5D45200FB4FB9 /* DropboxBrowserViewController.m */; };
 		060B129E18F5D49F00FB4FB9 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060B129D18F5D49F00FB4FB9 /* DropboxSDK.framework */; };
 		060B139D18F5E5E000FB4FB9 /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 060B134918F5E5E000FB4FB9 /* folder.png */; };
@@ -122,6 +126,11 @@
 
 /* Begin PBXFileReference section */
 		060401EE18FDB5D500AC82AA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		060401FB18FDE6A300AC82AA /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		060401FD18FDE8B600AC82AA /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
+		060401FE18FDE8B600AC82AA /* ALAssetsLibrary+CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+CustomPhotoAlbum.m"; sourceTree = "<group>"; };
+		0604020018FDED5E00AC82AA /* Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Checkmark.png; sourceTree = "<group>"; };
+		0604020118FDED5E00AC82AA /* Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checkmark@2x.png"; sourceTree = "<group>"; };
 		060B129A18F5D45200FB4FB9 /* DropboxBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropboxBrowserViewController.h; sourceTree = "<group>"; };
 		060B129B18F5D45200FB4FB9 /* DropboxBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropboxBrowserViewController.m; sourceTree = "<group>"; };
 		060B129D18F5D49F00FB4FB9 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
@@ -252,6 +261,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				060401FC18FDE6A300AC82AA /* AssetsLibrary.framework in Frameworks */,
 				060401EF18FDB5D500AC82AA /* libsqlite3.dylib in Frameworks */,
 				0633A95618F72D3F005BEFED /* libz.dylib in Frameworks */,
 				0633A95418F72D30005BEFED /* CoreData.framework in Frameworks */,
@@ -430,6 +440,7 @@
 		06A932A918E9EE390043CA56 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				060401FB18FDE6A300AC82AA /* AssetsLibrary.framework */,
 				060401EE18FDB5D500AC82AA /* libsqlite3.dylib */,
 				0633A95518F72D3F005BEFED /* libz.dylib */,
 				0633A95318F72D30005BEFED /* CoreData.framework */,
@@ -448,10 +459,14 @@
 		06A9331518EB21E40043CA56 /* FilterVilla */ = {
 			isa = PBXGroup;
 			children = (
+				0604020018FDED5E00AC82AA /* Checkmark.png */,
+				0604020118FDED5E00AC82AA /* Checkmark@2x.png */,
 				060B13F118F5E63A00FB4FB9 /* Filter Helper */,
 				060B13F218F5E64C00FB4FB9 /* UIImage Category */,
 				060B143B18F6FFD600FB4FB9 /* Facebook View Controllers */,
 				060B143C18F6FFE800FB4FB9 /* Dropbox View Controller */,
+				060401FD18FDE8B600AC82AA /* ALAssetsLibrary+CustomPhotoAlbum.h */,
+				060401FE18FDE8B600AC82AA /* ALAssetsLibrary+CustomPhotoAlbum.m */,
 				06A9332418EB21E40043CA56 /* SelectPhotoViewController.h */,
 				06A9332518EB21E40043CA56 /* SelectPhotoViewController.m */,
 				06A9332B18EB21E40043CA56 /* ViewController.h */,
@@ -554,6 +569,7 @@
 				060B13AF18F5E5E000FB4FB9 /* numbers.png in Resources */,
 				060B13B518F5E5E000FB4FB9 /* page_white_acrobat.png in Resources */,
 				060B13A618F5E5E000FB4FB9 /* folder_photos@2x.png in Resources */,
+				0604020218FDED5E00AC82AA /* Checkmark.png in Resources */,
 				060B13CC18F5E5E000FB4FB9 /* page_white_film@2x.png in Resources */,
 				060B13D018F5E5E000FB4FB9 /* page_white_gear@2x.png in Resources */,
 				06A9333B18EB3D950043CA56 /* Main.storyboard in Resources */,
@@ -587,6 +603,7 @@
 				060B13B618F5E5E000FB4FB9 /* page_white_acrobat@2x.png in Resources */,
 				060B13AC18F5E5E000FB4FB9 /* invite_folder@2x.png in Resources */,
 				060B13C618F5E5E000FB4FB9 /* page_white_cup@2x.png in Resources */,
+				0604020318FDED5E00AC82AA /* Checkmark@2x.png in Resources */,
 				060B13D518F5E5E000FB4FB9 /* page_white_jef.png in Resources */,
 				060B13CF18F5E5E000FB4FB9 /* page_white_gear.png in Resources */,
 				060B13C218F5E5E000FB4FB9 /* page_white_cplusplus@2x.png in Resources */,
@@ -681,6 +698,7 @@
 				06A9332D18EB21E40043CA56 /* AppDelegate.m in Sources */,
 				0633A94518F72776005BEFED /* FacebookAlbumTableViewCell.m in Sources */,
 				06A9333818EB21E40043CA56 /* UIImage+FiltersImage.m in Sources */,
+				060401FF18FDE8B600AC82AA /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
