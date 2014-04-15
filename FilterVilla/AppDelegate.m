@@ -9,8 +9,22 @@
 #import "AppDelegate.h"
 #import <DropboxSDK/DropboxSDK.h>
 #import "GAI.h"
+#import "iRate.h"
 
 @implementation AppDelegate
+
++(void)initialize
+{
+    [iRate sharedInstance].onlyPromptIfLatestVersion = NO;
+
+    //set events count (default is 10)
+    [iRate sharedInstance].eventsUntilPrompt = 5;
+    
+    //disable minimum day limit and reminder periods
+    [iRate sharedInstance].daysUntilPrompt = 0;
+    [iRate sharedInstance].remindPeriod = 0;
+//    [iRate sharedInstance].previewMode = YES;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -19,7 +33,7 @@
     
     [GAI sharedInstance].dispatchInterval = 20;
     
-    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
+    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelError];
     
     [[GAI sharedInstance] trackerWithTrackingId:@"UA-40631521-3"];
     
