@@ -459,8 +459,6 @@
 		06A9331518EB21E40043CA56 /* FilterVilla */ = {
 			isa = PBXGroup;
 			children = (
-				0604020018FDED5E00AC82AA /* Checkmark.png */,
-				0604020118FDED5E00AC82AA /* Checkmark@2x.png */,
 				060B13F118F5E63A00FB4FB9 /* Filter Helper */,
 				060B13F218F5E64C00FB4FB9 /* UIImage Category */,
 				060B143B18F6FFD600FB4FB9 /* Facebook View Controllers */,
@@ -480,6 +478,8 @@
 		06A9333A18EB23380043CA56 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0604020018FDED5E00AC82AA /* Checkmark.png */,
+				0604020118FDED5E00AC82AA /* Checkmark@2x.png */,
 				06A9331618EB21E40043CA56 /* AppDelegate.h */,
 				06A9331718EB21E40043CA56 /* AppDelegate.m */,
 				06A9331818EB21E40043CA56 /* Main.storyboard */,
