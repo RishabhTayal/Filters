@@ -72,6 +72,11 @@
     }
 }
 
+-(void)showFacebook:(id)sender
+{
+    [RTFacebookAlbumViewController showWithDelegate:self];
+}
+
 #pragma mark - UIImagePickerController Delegate
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
@@ -117,13 +122,6 @@
         
         // Set the delegate property to recieve delegate method calls
         dropboxBrowser.rootViewDelegate = self;
-    }
-    if ([[segue identifier] isEqualToString:@"showFacebookBrowser"]) {
-        [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"ui_action" action:@"ui_button" label:@"Facebook" value:nil] build]];
-        UINavigationController* navC = [segue destinationViewController];
-        
-        FacebookAlbumViewController* facebookVC = (FacebookAlbumViewController*) navC.topViewController;
-        facebookVC.delegate = self;
     }
 }
 

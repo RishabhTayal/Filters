@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "196221AC6E6C489DBE7BEF3E"
+               BlueprintIdentifier = "18569BD787EC4FA492612EA3"
                BuildableName = "libPods-BDKNotifyHUD.a"
                BlueprintName = "Pods-BDKNotifyHUD"
                ReferencedContainer = "container:Pods.xcodeproj">

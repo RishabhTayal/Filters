@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "DropboxBrowserViewController.h"
-#import "FacebookAlbumViewController.h"
+#import "RTFacebookAlbumViewController.h"
 #import <iAd/iAd.h>
 #import "GAITrackedViewController.h"
 
-@interface SelectPhotoViewController : GAITrackedViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate, DropboxBrowserDelegate, ADBannerViewDelegate, FacebookViewDelegate>
+@interface SelectPhotoViewController : GAITrackedViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate, DropboxBrowserDelegate, ADBannerViewDelegate, RTFacebookViewDelegate>
 
 -(IBAction)loadPhotosClicked:(id)sender;
+-(IBAction)showFacebook:(id)sender;
 
 @end

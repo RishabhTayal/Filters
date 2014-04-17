@@ -19,8 +19,11 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - BDKNotifyHUD (1.1.0)
+  - Facebook-iOS-SDK (3.13.1)
   - GoogleAnalytics-iOS-SDK (3.0.6)
   - iRate (1.10.2)
+  - RTFacebookAlbum (1.1):
+    - Facebook-iOS-SDK
   - SwipeView (1.3)
 
 DEPENDENCIES:
@@ -28,13 +31,20 @@ DEPENDENCIES:
   - BDKNotifyHUD (~> 1.1.0)
   - GoogleAnalytics-iOS-SDK
   - iRate
+  - RTFacebookAlbum (from `https://github.com/rishabhtayal/RTFacebookAlbum.git`)
   - SwipeView
+
+EXTERNAL SOURCES:
+  RTFacebookAlbum:
+    :git: https://github.com/rishabhtayal/RTFacebookAlbum.git
 
 SPEC CHECKSUMS:
   AFNetworking: 0121f4b69be3fa58d1ab317866e036e12ac9651d
   BDKNotifyHUD: efda37564bafd510dd56b972ea2ad8318a11751c
+  Facebook-iOS-SDK: 0d121e16437981fabff9379e07bf646bd5ab245c
   GoogleAnalytics-iOS-SDK: 16dfcc0c4491148bf372edc85a8470cc405ffb72
   iRate: eb8ca35519dd57a586e4c72bb5135ccb6abee908
+  RTFacebookAlbum: 0f4beeac52584b5489885edb4df73c9106705ada
   SwipeView: 9533067753d80f15049f70cf903ef7980f79acf2
 
 COCOAPODS: 0.32.1

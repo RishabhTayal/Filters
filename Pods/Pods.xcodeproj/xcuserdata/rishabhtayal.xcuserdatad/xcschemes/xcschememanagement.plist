@@ -14,7 +14,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Facebook-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-GoogleAnalytics-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-RTFacebookAlbum.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,32 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>196221AC6E6C489DBE7BEF3E</key>
+		<key>18569BD787EC4FA492612EA3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3A74CA51434C4A1E899A0ED7</key>
+		<key>23D19B81F4584B9BAE09DC68</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3F89059855F24D2694C4744C</key>
+		<key>39DA87343D064F2F9D4725FA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>456D1B91A6B6464BB050261C</key>
+		<key>4AACC34B8EC64696BC8C5B28</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B3AB6E7364CE4DD48CA9DD8D</key>
+		<key>64B6581267CD4B13BB546398</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D627F89494AB43888D1E3138</key>
+		<key>653C791BFC5742AF9C67487C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6A861C386DA34008A5D7DB7A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A34EEB43886C493C91E5C7B4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -99,11 +99,6 @@
 		060B13EF18F5E5E000FB4FB9 /* pages.png in Resources */ = {isa = PBXBuildFile; fileRef = 060B139B18F5E5E000FB4FB9 /* pages.png */; };
 		060B13F018F5E5E000FB4FB9 /* pages@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 060B139C18F5E5E000FB4FB9 /* pages@2x.png */; };
 		060B13F418F5F17300FB4FB9 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060B13F318F5F17200FB4FB9 /* iAd.framework */; };
-		060B143A18F6FFCF00FB4FB9 /* FacebookAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 060B143918F6FFCF00FB4FB9 /* FacebookAlbumViewController.m */; };
-		060B143E18F7006F00FB4FB9 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060B143D18F7006F00FB4FB9 /* FacebookSDK.framework */; };
-		060B144118F7019300FB4FB9 /* FacebookPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 060B144018F7019300FB4FB9 /* FacebookPhotoViewController.m */; };
-		0633A94518F72776005BEFED /* FacebookAlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0633A94318F72776005BEFED /* FacebookAlbumTableViewCell.m */; };
-		0633A94618F72776005BEFED /* FacebookAlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0633A94418F72776005BEFED /* FacebookAlbumTableViewCell.xib */; };
 		0633A95218F72D23005BEFED /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0633A95118F72D23005BEFED /* SystemConfiguration.framework */; };
 		0633A95418F72D30005BEFED /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0633A95318F72D30005BEFED /* CoreData.framework */; };
 		0633A95618F72D3F005BEFED /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0633A95518F72D3F005BEFED /* libz.dylib */; };
@@ -219,14 +214,6 @@
 		060B139B18F5E5E000FB4FB9 /* pages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pages.png; sourceTree = "<group>"; };
 		060B139C18F5E5E000FB4FB9 /* pages@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pages@2x.png"; sourceTree = "<group>"; };
 		060B13F318F5F17200FB4FB9 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		060B143818F6FFCF00FB4FB9 /* FacebookAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookAlbumViewController.h; sourceTree = "<group>"; };
-		060B143918F6FFCF00FB4FB9 /* FacebookAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookAlbumViewController.m; sourceTree = "<group>"; };
-		060B143D18F7006F00FB4FB9 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
-		060B143F18F7019300FB4FB9 /* FacebookPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookPhotoViewController.h; sourceTree = "<group>"; };
-		060B144018F7019300FB4FB9 /* FacebookPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookPhotoViewController.m; sourceTree = "<group>"; };
-		0633A94218F72776005BEFED /* FacebookAlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookAlbumTableViewCell.h; sourceTree = "<group>"; };
-		0633A94318F72776005BEFED /* FacebookAlbumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookAlbumTableViewCell.m; sourceTree = "<group>"; };
-		0633A94418F72776005BEFED /* FacebookAlbumTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacebookAlbumTableViewCell.xib; sourceTree = "<group>"; };
 		0633A95118F72D23005BEFED /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0633A95318F72D30005BEFED /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0633A95518F72D3F005BEFED /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -271,7 +258,6 @@
 				06A932AD18E9EE390043CA56 /* CoreGraphics.framework in Frameworks */,
 				06A932AF18E9EE390043CA56 /* UIKit.framework in Frameworks */,
 				06A932AB18E9EE390043CA56 /* Foundation.framework in Frameworks */,
-				060B143E18F7006F00FB4FB9 /* FacebookSDK.framework in Frameworks */,
 				CEA29CAD22DD4F778218FE03 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,18 +374,6 @@
 			name = "UIImage Category";
 			sourceTree = "<group>";
 		};
-		060B143B18F6FFD600FB4FB9 /* Facebook View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				0633A94718F7277C005BEFED /* Cell */,
-				060B143818F6FFCF00FB4FB9 /* FacebookAlbumViewController.h */,
-				060B143918F6FFCF00FB4FB9 /* FacebookAlbumViewController.m */,
-				060B143F18F7019300FB4FB9 /* FacebookPhotoViewController.h */,
-				060B144018F7019300FB4FB9 /* FacebookPhotoViewController.m */,
-			);
-			name = "Facebook View Controllers";
-			sourceTree = "<group>";
-		};
 		060B143C18F6FFE800FB4FB9 /* Dropbox View Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,16 +381,6 @@
 				060B129B18F5D45200FB4FB9 /* DropboxBrowserViewController.m */,
 			);
 			name = "Dropbox View Controller";
-			sourceTree = "<group>";
-		};
-		0633A94718F7277C005BEFED /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				0633A94218F72776005BEFED /* FacebookAlbumTableViewCell.h */,
-				0633A94318F72776005BEFED /* FacebookAlbumTableViewCell.m */,
-				0633A94418F72776005BEFED /* FacebookAlbumTableViewCell.xib */,
-			);
-			name = Cell;
 			sourceTree = "<group>";
 		};
 		06A9329E18E9EE390043CA56 = {
@@ -445,7 +409,6 @@
 				0633A95518F72D3F005BEFED /* libz.dylib */,
 				0633A95318F72D30005BEFED /* CoreData.framework */,
 				0633A95118F72D23005BEFED /* SystemConfiguration.framework */,
-				060B143D18F7006F00FB4FB9 /* FacebookSDK.framework */,
 				060B13F318F5F17200FB4FB9 /* iAd.framework */,
 				060B129D18F5D49F00FB4FB9 /* DropboxSDK.framework */,
 				06A932AA18E9EE390043CA56 /* Foundation.framework */,
@@ -461,7 +424,6 @@
 			children = (
 				060B13F118F5E63A00FB4FB9 /* Filter Helper */,
 				060B13F218F5E64C00FB4FB9 /* UIImage Category */,
-				060B143B18F6FFD600FB4FB9 /* Facebook View Controllers */,
 				060B143C18F6FFE800FB4FB9 /* Dropbox View Controller */,
 				060401FD18FDE8B600AC82AA /* ALAssetsLibrary+CustomPhotoAlbum.h */,
 				060401FE18FDE8B600AC82AA /* ALAssetsLibrary+CustomPhotoAlbum.m */,
@@ -610,7 +572,6 @@
 				060B13C918F5E5E000FB4FB9 /* page_white_excel.png in Resources */,
 				060B13A318F5E5E000FB4FB9 /* folder_camera_upload.png in Resources */,
 				060B13BB18F5E5E000FB4FB9 /* page_white_c.png in Resources */,
-				0633A94618F72776005BEFED /* FacebookAlbumTableViewCell.xib in Resources */,
 				060B13AD18F5E5E000FB4FB9 /* keynote.png in Resources */,
 				060B139F18F5E5E000FB4FB9 /* folder_app.png in Resources */,
 				060B13D818F5E5E000FB4FB9 /* page_white_js@2x.png in Resources */,
@@ -691,12 +652,9 @@
 				06A9333918EB21E40043CA56 /* ViewController.m in Sources */,
 				06A9333618EB21E40043CA56 /* SelectPhotoViewController.m in Sources */,
 				060B129C18F5D45200FB4FB9 /* DropboxBrowserViewController.m in Sources */,
-				060B144118F7019300FB4FB9 /* FacebookPhotoViewController.m in Sources */,
-				060B143A18F6FFCF00FB4FB9 /* FacebookAlbumViewController.m in Sources */,
 				06A9333518EB21E40043CA56 /* main.m in Sources */,
 				06A9333218EB21E40043CA56 /* FilterClass.m in Sources */,
 				06A9332D18EB21E40043CA56 /* AppDelegate.m in Sources */,
-				0633A94518F72776005BEFED /* FacebookAlbumTableViewCell.m in Sources */,
 				06A9333818EB21E40043CA56 /* UIImage+FiltersImage.m in Sources */,
 				060401FF18FDE8B600AC82AA /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 			);
